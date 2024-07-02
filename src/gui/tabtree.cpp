@@ -4,7 +4,6 @@
 
 #include "common/common.h"
 #include "common/display.h"
-#include "common/mimetypes.h"
 #include "common/timer.h"
 #include "gui/iconfactory.h"
 #include "gui/iconfont.h"
@@ -150,6 +149,7 @@ public:
         m_layout->addWidget(m_label);
         m_layout->setContentsMargins({});
         m_layout->addStretch(1);
+        m_layout->setSizeConstraint(QLayout::SetMinimumSize);
 
         updateFromItem(item);
     }
@@ -223,7 +223,7 @@ void labelItem(QTreeWidgetItem *item)
     QTreeWidget *parent = item->treeWidget();
     label = new ItemLabel(item);
     label->installEventFilter(parent);
-    item->setTextAlignment(0, Qt::AlignCenter);
+    item->setTextAlignment(0, Qt::AlignLeft);
     parent->setItemWidget(item, 0, label);
 
     setItemWidgetSelected(item);
@@ -254,6 +254,8 @@ TabTree::TabTree(QWidget *parent)
 
     const int x = smallIconSize();
     setIconSize(QSize(x, x));
+
+    setRootIsDecorated(false);
 
     setMinimumHeight(fontMetrics().lineSpacing() * 3);
     verticalScrollBar()->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Ignored);
@@ -674,8 +676,6 @@ void TabTree::doUpdateSize()
 
     resizeColumnToContents(0);
     w += sizeHintForColumn(0);
-    resizeColumnToContents(1);
-    w += sizeHintForColumn(1);
 
     setFixedWidth(w);
 }

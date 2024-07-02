@@ -22,6 +22,17 @@ namespace {
 
 bool hasSameData(const QVariantMap &data, const QVariantMap &lastData)
 {
+    // Detect change also in case the data is unchanged but previously copied
+    // by CopyQ and now externally. This solves storing a copied text which was
+    // previously synchronized from selection to clipboard via CopyQ.
+    if (
+            !lastData.value(mimeOwner).toByteArray().isEmpty()
+            && data.value(mimeOwner).toByteArray().isEmpty()
+       )
+    {
+        return false;
+    }
+
     for (auto it = lastData.constBegin(); it != lastData.constEnd(); ++it) {
         const auto &format = it.key();
         if ( !format.startsWith(COPYQ_MIME_PREFIX)
@@ -168,14 +179,20 @@ void ClipboardMonitor::onClipboardChanged(ClipboardMode mode)
     }
 
     // omit running run automatic commands when disabled
-    if ( !m_runSelection && mode == ClipboardMode::Selection )
+    if ( !m_runSelection && mode == ClipboardMode::Selection ) {
+        if ( m_storeSelection && !m_clipboardTab.isEmpty() ) {
+            data.insert(mimeClipboardMode, QByteArrayLiteral("selection"));
+            setTextData(&data, m_clipboardTab, mimeOutputTab);
+            emit saveData(data);
+        }
         return;
+    }
 #endif
 
     if (mode != ClipboardMode::Clipboard) {
         const QString modeName = mode == ClipboardMode::Selection
-                ? "selection"
-                : "find buffer";
+                ? QStringLiteral("selection")
+                : QStringLiteral("find buffer");
         data.insert(mimeClipboardMode, modeName);
     }
 

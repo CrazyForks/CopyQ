@@ -12,6 +12,8 @@
 #include <QCryptographicHash>
 #include <QDataStream>
 #include <QDir>
+#include <QFile>
+#include <QFileInfo>
 #include <QIODevice>
 #include <QList>
 #include <QPair>
@@ -30,6 +32,13 @@ public:
 
     const QString &path() const { return m_path; }
     void setPath(const QString &path) { m_path = path; }
+
+    qint64 size() const
+    {
+        return QFileInfo(m_path).size();
+    }
+
+    QString toString() const { return m_path; }
 
     QByteArray readAll() const
     {
@@ -209,6 +218,7 @@ QString dataFilePath(const QByteArray &bytes, bool create = false)
 void registerDataFileConverter()
 {
     QMetaType::registerConverter(&DataFile::readAll);
+    QMetaType::registerConverter(&DataFile::toString);
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     qRegisterMetaTypeStreamOperators<DataFile>("DataFile");
 #else
@@ -223,27 +233,37 @@ void serializeData(QDataStream *stream, const QVariantMap &data, int itemDataThr
     const qint32 size = data.size();
     *stream << size;
 
-    QByteArray bytes;
     for (auto it = data.constBegin(); it != data.constEnd(); ++it) {
-        const auto &mime = it.key();
-        bytes = data[mime].toByteArray();
-        if ( (itemDataThreshold >= 0 && bytes.length() > itemDataThreshold) || mime.startsWith(mimeFilePrefix) ) {
-            const QString path = dataFilePath(bytes, true);
-            if ( path.isEmpty() ) {
-                stream->setStatus(QDataStream::WriteFailed);
-                return;
-            }
+        const QString &mime = it.key();
+        const QVariant &value = it.value();
 
-            if ( !QFile::exists(path) ) {
-                QSaveFile f(path);
-                f.setDirectWriteFallback(false);
-                if ( !f.open(QIODevice::WriteOnly) || !f.write(bytes) || !f.commit() ) {
-                    log( QStringLiteral("Failed to create data file \"%1\": %2")
-                            .arg(path, f.errorString()),
-                            LogError );
+        const DataFile dataFile = value.value<DataFile>();
+        const int dataLength = dataFile.path().isEmpty()
+            ? value.toByteArray().size() : dataFile.size();
+
+        if ( (itemDataThreshold >= 0 && dataLength > itemDataThreshold) || mime.startsWith(mimeFilePrefix) ) {
+            QString path = dataFile.path();
+
+            // Already saved into a separate data file?
+            if ( path.isEmpty() ) {
+                const QByteArray bytes = value.toByteArray();
+                path = dataFilePath(bytes, true);
+                if ( path.isEmpty() ) {
                     stream->setStatus(QDataStream::WriteFailed);
-                    f.cancelWriting();
                     return;
+                }
+
+                if ( !QFile::exists(path) ) {
+                    QSaveFile f(path);
+                    f.setDirectWriteFallback(false);
+                    if ( !f.open(QIODevice::WriteOnly) || !f.write(bytes) || !f.commit() ) {
+                        log( QStringLiteral("Failed to create data file \"%1\": %2")
+                                .arg(path, f.errorString()),
+                                LogError );
+                        stream->setStatus(QDataStream::WriteFailed);
+                        f.cancelWriting();
+                        return;
+                    }
                 }
             }
 
@@ -255,6 +275,7 @@ void serializeData(QDataStream *stream, const QVariantMap &data, int itemDataThr
             *stream << /* compressData = */ false
                     << path.toUtf8();
         } else {
+            const QByteArray bytes = value.toByteArray();
             *stream << compressMime(mime)
                     << /* compressData = */ false
                     << bytes;

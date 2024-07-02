@@ -37,6 +37,7 @@
 #include "gui/logdialog.h"
 #include "gui/notification.h"
 #include "gui/notificationdaemon.h"
+#include "gui/selectiondata.h"
 #include "gui/tabdialog.h"
 #include "gui/tabicons.h"
 #include "gui/tabwidget.h"
@@ -145,7 +146,7 @@ bool matchData(const QRegularExpression &re, const QVariantMap &data, const QStr
 bool canExecuteCommand(const Command &command, const QVariantMap &data, const QString &sourceTabName)
 {
     // Verify that an action is provided.
-    if ( command.cmd.isEmpty() && !command.remove
+    if ( command.cmd.isEmpty()
          && (command.tab.isEmpty() || command.tab == sourceTabName) )
     {
         return false;
@@ -178,54 +179,6 @@ void disableActionWhenTabGroupSelected(WidgetOrAction *action, MainWindow *windo
 {
     QObject::connect( window, &MainWindow::tabGroupSelected,
                       action, &WidgetOrAction::setDisabled );
-}
-
-void addSelectionData(
-        QVariantMap *result,
-        const QList<QPersistentModelIndex> &selectedIndexes)
-{
-    result->insert(mimeSelectedItems, QVariant::fromValue(selectedIndexes));
-}
-
-void addSelectionData(
-        QVariantMap *result,
-        const QModelIndexList &selectedIndexes)
-{
-    QList<QPersistentModelIndex> selected;
-    selected.reserve(selectedIndexes.size());
-    for (const auto &index : selectedIndexes)
-        selected.append(index);
-    std::sort(selected.begin(), selected.end());
-    addSelectionData(result, selected);
-}
-
-/// Adds information about current tab and selection if command is triggered by user.
-QVariantMap addSelectionData(
-        const ClipboardBrowser &c,
-        const QModelIndex &currentIndex,
-        const QModelIndexList &selectedIndexes)
-{
-    auto result = c.copyIndexes(selectedIndexes);
-
-    result.insert(mimeCurrentTab, c.tabName());
-
-    if ( currentIndex.isValid() ) {
-        const QPersistentModelIndex current = currentIndex;
-        result.insert(mimeCurrentItem, QVariant::fromValue(current));
-    }
-
-    if ( !selectedIndexes.isEmpty() ) {
-        addSelectionData(&result, selectedIndexes);
-    }
-
-    return result;
-}
-
-QVariantMap addSelectionData(const ClipboardBrowser &c)
-{
-    const QModelIndexList selectedIndexes = c.selectionModel()->selectedIndexes();
-    const auto current = c.selectionModel()->currentIndex();
-    return addSelectionData(c, current, selectedIndexes);
 }
 
 QMenu *findSubMenu(const QString &name, const QMenu &menu)
@@ -464,6 +417,21 @@ bool menuItemMatches(const QModelIndex &index, const QString &searchText)
             return true;
     }
     return false;
+}
+
+QList<QKeySequence> getUniqueShortcuts(const QStringList &shortcuts, QList<QKeySequence> *usedShortcuts)
+{
+    QList<QKeySequence> uniqueShortcuts;
+
+    for (const auto &shortcutText : shortcuts) {
+        const QKeySequence shortcut(shortcutText, QKeySequence::PortableText);
+        if ( !shortcut.isEmpty() && !usedShortcuts->contains(shortcut) ) {
+            usedShortcuts->append(shortcut);
+            uniqueShortcuts.append(shortcut);
+        }
+    }
+
+    return uniqueShortcuts;
 }
 
 } // namespace
@@ -1118,13 +1086,13 @@ void MainWindow::onItemCommandActionTriggered(CommandAction *commandAction, cons
     if ( !command.cmd.isEmpty() ) {
         if (command.transform) {
             for (const auto &index : selected) {
-                auto actionData = addSelectionData(*c, index, {index});
+                auto actionData = selectionData(*c, index, {index});
                 if ( !triggeredShortcut.isEmpty() )
                     actionData.insert(mimeShortcut, triggeredShortcut);
                 action(actionData, command, index);
             }
         } else {
-            auto actionData = addSelectionData(*c);
+            auto actionData = selectionData(*c);
             if ( !triggeredShortcut.isEmpty() )
                 actionData.insert(mimeShortcut, triggeredShortcut);
             action(actionData, command, QModelIndex());
@@ -1142,7 +1110,7 @@ void MainWindow::onItemCommandActionTriggered(CommandAction *commandAction, cons
         }
     }
 
-    if (command.remove)
+    if ( command.remove && (command.tab.isEmpty() || command.tab != c->tabName()) )
         c->removeIndexes(selected);
 
     if (command.hideWindow)
@@ -1287,7 +1255,10 @@ void MainWindow::onBrowserCreated(ClipboardBrowser *browser)
                         browser, topLeft.row(), bottomRight.row());
                     }
              } );
+}
 
+void MainWindow::onBrowserLoaded(ClipboardBrowser *browser)
+{
     if (isScriptOverridden(ScriptOverrides::OnItemsLoaded)) {
         runScript(
             QStringLiteral("onItemsLoaded()"),
@@ -1502,6 +1473,8 @@ ClipboardBrowserPlaceholder *MainWindow::createTab(const QString &name, TabNameM
         placeholder = new ClipboardBrowserPlaceholder(name, m_sharedData, this);
         connect( placeholder, &ClipboardBrowserPlaceholder::browserCreated,
                  this, &MainWindow::onBrowserCreated );
+        connect( placeholder, &ClipboardBrowserPlaceholder::browserLoaded,
+                 this, &MainWindow::onBrowserLoaded );
         connect( placeholder, &ClipboardBrowserPlaceholder::browserDestroyed,
                  this, [this, placeholder]() { onBrowserDestroyed(placeholder); } );
 
@@ -1580,7 +1553,7 @@ void MainWindow::addCommandsToItemMenu(ClipboardBrowser *c)
         return;
     }
 
-    auto data = addSelectionData(*c);
+    auto data = selectionData(*c);
     const auto commands = commandsForMenu(data, c->tabName(), m_menuCommands);
 
     for (const auto &command : commands) {
@@ -1615,11 +1588,17 @@ void MainWindow::addCommandsToTrayMenu(const QVariantMap &clipboardData, QList<Q
         data.insert( mimeWindowTitle, m_windowForMenuPaste->getTitle() );
 
     const auto commands = commandsForMenu(data, placeholder->tabName(), m_trayMenuCommands);
+    QList<QKeySequence> usedShortcuts;
 
     for (const auto &command : commands) {
         QString name = command.name;
         QMenu *currentMenu = createSubMenus(&name, m_trayMenu);
         auto act = new CommandAction(command, name, currentMenu);
+
+        const QList<QKeySequence> uniqueShortcuts = getUniqueShortcuts(
+                command.globalShortcuts, &usedShortcuts);
+        act->setShortcuts(uniqueShortcuts);
+
         actions->append(act);
 
         addMenuMatchCommand(&m_trayMenuMatchCommands, command.matchCmd, act);
@@ -1808,26 +1787,17 @@ void MainWindow::updateActionShortcuts()
             continue;
 
         const Command &command = act->command();
-        QList<QKeySequence> uniqueShortcuts;
+        const QList<QKeySequence> uniqueShortcuts = getUniqueShortcuts(
+                command.shortcuts + command.globalShortcuts, &usedShortcuts);
 
-        const auto addShortuct = [&](const QString &shortcutText) {
-            const QKeySequence shortcut(shortcutText, QKeySequence::PortableText);
-            if ( !shortcut.isEmpty() && !usedShortcuts.contains(shortcut) ) {
-                usedShortcuts.append(shortcut);
-                uniqueShortcuts.append(shortcut);
-
-                if ( !isItemMenuDefaultActionValid() && isItemActivationShortcut(shortcut) )
-                    m_menuItem->setDefaultAction(act);
+        for (const auto &shortcut : uniqueShortcuts) {
+            if ( !isItemMenuDefaultActionValid() && isItemActivationShortcut(shortcut) ) {
+                m_menuItem->setDefaultAction(act);
+                break;
             }
-        };
+        }
 
-        for (const auto &shortcutText : command.shortcuts)
-            addShortuct(shortcutText);
-        for (const auto &shortcutText : command.globalShortcuts)
-            addShortuct(shortcutText);
-
-        if (!uniqueShortcuts.isEmpty())
-            act->setShortcuts(uniqueShortcuts);
+        act->setShortcuts(uniqueShortcuts);
     }
 
     for (int id = 0; id < m_actions.size(); ++id) {
@@ -2460,7 +2430,7 @@ bool MainWindow::runEventHandlerScript(const QString &script, const QVariantMap 
     const bool hasUpdatesEnabled = updatesEnabled();
     setUpdatesEnabled(false);
     action->waitForFinished();
-    setUpdatesEnabled(hasUpdatesEnabled);
+    setUpdatesEnabled(hasUpdatesEnabled || updatesEnabled());
     ++m_maxEventHandlerScripts;
     return !action->actionFailed() && action->exitCode() == 0;
 }
@@ -3692,7 +3662,7 @@ ActionDialog *MainWindow::openActionDialog(const QVariantMap &data)
 void MainWindow::openActionDialog()
 {
     auto c = browser();
-    const auto data = c ? addSelectionData(*c) : QVariantMap();
+    const auto data = c ? selectionData(*c) : QVariantMap();
     openActionDialog(data);
 }
 

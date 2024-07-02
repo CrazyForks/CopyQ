@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hr_HR">
+<TS version="2.1" language="he_IL">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../src/ui/aboutdialog.ui" line="14"/>
         <source>About</source>
-        <translation>Informacije</translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../src/gui/aboutdialog.cpp" line="84"/>
         <source>Clipboard Manager</source>
-        <translation>Upravljač međuspremnika</translation>
+        <translation>מנהל לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/gui/aboutdialog.cpp" line="91"/>
         <source>Author</source>
-        <translation>Autor</translation>
+        <translation>נוצר על ידי</translation>
     </message>
     <message>
         <location filename="../src/gui/aboutdialog.cpp" line="92"/>
         <source>E-mail</source>
-        <translation>E-mail</translation>
+        <translation>דוא&quot;ל</translation>
     </message>
     <message>
         <location filename="../src/gui/aboutdialog.cpp" line="93"/>
         <source>Web</source>
-        <translation>Web</translation>
+        <translation>רשת</translation>
     </message>
     <message>
         <location filename="../src/gui/aboutdialog.cpp" line="94"/>
         <source>Donate</source>
-        <translation>Doniraj</translation>
+        <translation>תרומה</translation>
     </message>
 </context>
 <context>
@@ -39,69 +39,59 @@
     <message>
         <location filename="../src/ui/actiondialog.ui" line="14"/>
         <source>Action Dialog</source>
-        <translation>Dijalog radnje</translation>
+        <translation>דו־שיח פעולה</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="33"/>
         <source>Co&amp;mmand:</source>
-        <translation>&amp;Naredba:</translation>
+        <translation>פ&amp;קודה:</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="58"/>
         <source>Standard &amp;input:</source>
-        <translation>Standardni &amp;unos:</translation>
+        <translation>קלט &amp;תיקני:</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="68"/>
         <source>Store standard o&amp;utput:</source>
-        <translation>Spremi standardni rez&amp;ultat:</translation>
+        <translation>אחסון &amp;פלט תיקני:</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="78"/>
         <source>Send data of given media type to standard input of command (leave empty to turn off)</source>
-        <translation>Pošalji podatke zadane vrste medija na standardni unos naredbe (ostavi prazno za deaktiviranje)</translation>
+        <translation>שליחת נתוני מדיה מסוג נתון לקלט פקודה תקני (להשאיר ריק לכיבוי)</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="85"/>
         <source>Create items from standard output of the program (leave empty to turn off)</source>
-        <translation>Stvori elemente iz standardnog rezultata programa (ostavi prazno za isključavanje)</translation>
+        <translation>יצירת פריטים מפלט התוכנית התיקנית (להשאיר ריק לכיבוי)</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="102"/>
         <source>&amp;Separator for new items:</source>
-        <translation>&amp;Znak razdvajanja za nove elemente:</translation>
+        <translation>&amp;מפריד לפריטים חדשים:</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="112"/>
         <source>&lt;p&gt;Regular expression for splitting output into multiple items.&lt;\p&gt;
 &lt;p&gt;Use &lt;b&gt;\n&lt;/b&gt; to store each line to separate item.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Regularni izraz za rastavljanje rezultata u pojedinačne elemente.&lt;\p&gt;
-&lt;p&gt;Koristi &lt;b&gt;\n&lt;/b&gt; za spremanje svakog retka u zasebni element.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;ביטוי רגיל לפיצול פלט לפריטים מרובים.&lt;\p&gt;
+&lt;p&gt;נא להשתמש ב־&lt;b&gt;\n&lt;/b&gt; כדי לאחסן כל שורה בפריט נפרד.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="116"/>
         <source>\n</source>
-        <translation>\n</translation>
+        <translation type="unfinished">\n</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="123"/>
         <source>Output &amp;tab:</source>
-        <translation>Kartica &amp;rezultata:</translation>
+        <translation>לשונית &amp;פלט:</translation>
     </message>
     <message>
         <location filename="../src/ui/actiondialog.ui" line="133"/>
         <source>Save items in tab with given name (leave empty to save in the current tab)</source>
-        <translation>Spremi elemente u karticu sa zadanim imenom (ostavi prazno za spremanje u trenutačnu karticu)</translation>
-    </message>
-    <message>
-        <source>Command saved</source>
-        <translation type="vanished">Naredba spremljena</translation>
-    </message>
-    <message>
-        <source>Command was saved and can be accessed from item menu.
-You can set up the command in preferences.</source>
-        <translation type="vanished">Naredba je spremljena i može joj se pristupiti u izborniku elemenata.
-Naredbu je moguće postaviti u postavkama.</translation>
+        <translation>שמירת פריטים בלשונית בשם נתון (להשאיר ריק לשמירה בלשונית נוכחית)</translation>
     </message>
 </context>
 <context>
@@ -109,17 +99,17 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/gui/actionhandler.cpp" line="118"/>
         <source>Error: %1</source>
-        <translation>Greška: %1</translation>
+        <translation>שגיאה: %1</translation>
     </message>
     <message>
         <location filename="../src/gui/actionhandler.cpp" line="128"/>
         <source>Exit code: %1</source>
-        <translation>Kod za zatvaranje: %1</translation>
+        <translation>קוד יציאה: %1</translation>
     </message>
     <message>
         <location filename="../src/gui/actionhandler.cpp" line="158"/>
         <source>Command %1</source>
-        <translation>Naredba %1</translation>
+        <translation>פקודה %1</translation>
     </message>
 </context>
 <context>
@@ -127,17 +117,17 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/ui/actionhandlerdialog.ui" line="14"/>
         <source>Process Manager</source>
-        <translation>Upravljač procesa</translation>
+        <translation>מנהל תהליכים</translation>
     </message>
     <message>
         <location filename="../src/ui/actionhandlerdialog.ui" line="22"/>
         <source>Filter</source>
-        <translation>Filtar</translation>
+        <translation>מסנן</translation>
     </message>
     <message>
         <location filename="../src/ui/actionhandlerdialog.ui" line="32"/>
         <source>&amp;Terminate Selected</source>
-        <translation>&amp;Prekini odabrano</translation>
+        <translation>&amp;סיום תהליכים שנבחרו</translation>
     </message>
 </context>
 <context>
@@ -145,198 +135,198 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/ui/addcommanddialog.ui" line="14"/>
         <source>Add Commands</source>
-        <translation>Dodaj naredbe</translation>
+        <translation>הוספת פקודות</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="63"/>
         <source>Show/hide main window</source>
-        <translation>Prikaži/sakrij glavni prozor</translation>
+        <translation>הצגת/הסתרת חלו ראשי</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="64"/>
         <source>Show the tray menu</source>
-        <translation>Prikaži izbornik programske trake</translation>
+        <translation>הצגת תפריט מגש</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="65"/>
         <source>Show main window under mouse cursor</source>
-        <translation>Prikaži glavni prozor ispod pokazivača miša</translation>
+        <translation>הצגת חלון ראשי מתחת לסמן העכבר</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="66"/>
         <source>Edit clipboard</source>
-        <translation>Uredi međuspremnik</translation>
+        <translation>עריכת לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="67"/>
         <source>Edit first item</source>
-        <translation>Uredi prvi element</translation>
+        <translation>עריכת פריט ראשון</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="68"/>
         <source>Copy second item</source>
-        <translation>Kopiraj drugi element</translation>
+        <translation>העתקת פריט שני</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="69"/>
         <source>Show action dialog</source>
-        <translation>Prikaži dijalog radnje</translation>
+        <translation>הצגת דו־שיח פעולה</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="70"/>
         <source>Create new item</source>
-        <translation>Stvori novi element</translation>
+        <translation>יצירת פריט חדש</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="71"/>
         <source>Copy next item</source>
-        <translation>Kopiraj sljedeći element</translation>
+        <translation>העתקת הפריט הבא</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="72"/>
         <source>Copy previous item</source>
-        <translation>Kopiraj prethodni element</translation>
+        <translation>העתקת הפריט הקודם</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="73"/>
         <source>Paste clipboard as plain text</source>
-        <translation>Umetni međuspremnik kao običan tekst</translation>
+        <translation>העתקת לוח־גזירים כמלל רגיל</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="74"/>
         <source>Disable clipboard storing</source>
-        <translation>Deaktiviraj spremanje međuspremnika</translation>
+        <translation>השבתת מיון לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="75"/>
         <source>Enable clipboard storing</source>
-        <translation>Aktiviraj spremanje međuspremnika</translation>
+        <translation>אפשור מיון לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="76"/>
         <source>Paste and copy next</source>
-        <translation>Kopiraj i umetni sljedeće</translation>
+        <translation>הדבקה והעתקת הבא</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="77"/>
         <source>Paste and copy previous</source>
-        <translation>Kopiraj i umetni prethodno</translation>
+        <translation>הדבקה והעתקת הקודם</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="78"/>
         <source>Take screenshot</source>
-        <translation>Snimi sliku ekrana</translation>
+        <translation>צילום־מרקע</translation>
     </message>
     <message>
         <location filename="../src/common/globalshortcutcommands.cpp" line="79"/>
         <source>Paste current date and time</source>
-        <translation>Umetni trenutačni datum i vrijeme</translation>
+        <translation>הדבקת תאריך ושעה נוכחיים</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="40"/>
         <source>New command</source>
-        <translation>Nova naredba</translation>
+        <translation>פקודה חדשה</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="47"/>
         <source>Ignore items with no or single character</source>
-        <translation>Zanemari elemente s nijednim ili sa samo jednim znakom</translation>
+        <translation>להתעלם מפריטים עם תו בודד או ללא תווים</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="84"/>
         <source>Open in &amp;Browser</source>
-        <translation>Otvori u &amp;pregledniku</translation>
+        <translation>פתיחה ב&amp;דפדפן</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="92"/>
         <source>Paste as Plain Text</source>
-        <translation>Umetni kao običan tekst</translation>
+        <translation>הדבקה כמלל רגיל</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="100"/>
         <source>Autoplay videos</source>
-        <translation>Automatski pokreni videosnimke</translation>
+        <translation>הפעלת סרטונים אוטומטית</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="109"/>
         <source>Copy URL (web address) to other tab</source>
-        <translation>Kopiraj URL (web-adresu) u drugu karticu</translation>
+        <translation>העתקת כתובת URL (כתובת מרשתת) ללשונית אחרת</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="116"/>
         <source>Create thumbnail (needs ImageMagick)</source>
-        <translation>Stvori minijature (treba ImageMagick)</translation>
+        <translation>יצירת דוגמית (מצריך ImageMagick)</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="124"/>
         <source>Create QR Code from URL (needs qrencode)</source>
-        <translation>Stvori QR-kod iz URL-a (treba qrencode)</translation>
+        <translation>יצירת קוד QR מכתובת URL (מצריך qrencode)</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="132"/>
         <source>Tasks</source>
         <comment>Tab name for some predefined commands</comment>
-        <translation>Zadaci</translation>
+        <translation>משימות</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="135"/>
         <source>Add to %1 tab</source>
         <comment>%1 is quoted Tasks tab name</comment>
-        <translation>Dodaj kartici „%1”</translation>
+        <translation>הוספה ללשונית %1</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="143"/>
         <source>Move to %1 tab</source>
         <comment>%1 is quoted Tasks tab name</comment>
-        <translation>Premjesti na karticu „%1”</translation>
+        <translation>העברה ללשונית %1</translation>
     </message>
     <message>
-        <location filename="../src/common/predefinedcommands.cpp" line="152"/>
+        <location filename="../src/common/predefinedcommands.cpp" line="151"/>
         <source>Ignore copied files</source>
-        <translation>Zanemari kopirane datoteke</translation>
+        <translation>להתעלם מקובצים שהועתקו</translation>
+    </message>
+    <message>
+        <location filename="../src/common/predefinedcommands.cpp" line="160"/>
+        <source>Ignore *&quot;Password&quot;* window</source>
+        <translation>להתעלם מחלוןן *&quot;סיסמה&quot;*</translation>
     </message>
     <message>
         <location filename="../src/common/predefinedcommands.cpp" line="161"/>
-        <source>Ignore *&quot;Password&quot;* window</source>
-        <translation>Zanemari prozor *„Lozinka”*</translation>
-    </message>
-    <message>
-        <location filename="../src/common/predefinedcommands.cpp" line="162"/>
         <source>Password</source>
-        <translation>Lozinka</translation>
+        <translation>סיסמה</translation>
     </message>
     <message>
-        <location filename="../src/common/predefinedcommands.cpp" line="170"/>
+        <location filename="../src/common/predefinedcommands.cpp" line="169"/>
         <source>Move to Trash</source>
-        <translation>Premjesti u smeće</translation>
+        <translation>העברה לסל־המחזור</translation>
     </message>
     <message>
-        <location filename="../src/common/predefinedcommands.cpp" line="173"/>
+        <location filename="../src/common/predefinedcommands.cpp" line="172"/>
         <source>(trash)</source>
-        <translation>(smeće)</translation>
+        <translation>(סל־מחזור)</translation>
     </message>
     <message>
-        <location filename="../src/common/predefinedcommands.cpp" line="177"/>
+        <location filename="../src/common/predefinedcommands.cpp" line="176"/>
         <source>Clear Current Tab</source>
-        <translation>Izbriši trenutačnu karticu</translation>
+        <translation>ניקוי לשונית נוכחית</translation>
     </message>
 </context>
 <context>
     <name>ClipboardBrowser</name>
     <message>
-        <location filename="../src/gui/clipboardbrowser.cpp" line="1581"/>
+        <location filename="../src/gui/clipboardbrowser.cpp" line="1577"/>
         <source>Cannot add new items to tab %1. Please remove items manually to make space.</source>
-        <translation>Nije moguće dodati nove elemente u karticu „%1”. Oslobodi mjesta ručnim uklanjanjem elemenata.</translation>
+        <translation>לא ניתן להוסיף פריטים חדשים ללשונית %1. נא להסיר פריטים באופן ידני כדי לפנות מקום.</translation>
     </message>
     <message>
-        <location filename="../src/gui/clipboardbrowser.cpp" line="1868"/>
+        <location filename="../src/gui/clipboardbrowser.cpp" line="1896"/>
         <source>Discard Changes?</source>
-        <translation>Odbaciti promjene?</translation>
+        <translation>לסלק שינויים?</translation>
     </message>
     <message>
-        <location filename="../src/gui/clipboardbrowser.cpp" line="1869"/>
+        <location filename="../src/gui/clipboardbrowser.cpp" line="1897"/>
         <source>Do you really want to &lt;strong&gt;discard changes&lt;/strong&gt;?</source>
-        <translation>Zaista želiš &lt;strong&gt;odabaciti promjene&lt;/strong&gt;?</translation>
+        <translation>האם &lt;strong&gt;לסלק שינויים&lt;/strong&gt;?</translation>
     </message>
 </context>
 <context>
@@ -344,12 +334,12 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/app/clipboardclient.cpp" line="101"/>
         <source>Connection lost!</source>
-        <translation>Veza izgubljena!</translation>
+        <translation>החיבור אבד!</translation>
     </message>
     <message>
         <location filename="../src/app/clipboardclient.cpp" line="108"/>
         <source>Cannot connect to server! Start CopyQ server first.</source>
-        <translation>Nije moguće povezati se s poslužiteljem. Najprije pokreni poslužitelj CopyQ-a.</translation>
+        <translation>לא ניתן להתחבר לשרת! נא לאתחל את שרת CopyQ תחילה.</translation>
     </message>
 </context>
 <context>
@@ -357,33 +347,33 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/ui/clipboarddialog.ui" line="20"/>
         <source>Clipboard Content</source>
-        <translation>Sadržaj međuspremnika</translation>
+        <translation>תכולת לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/ui/clipboarddialog.ui" line="73"/>
         <source>&amp;Formats:</source>
-        <translation>&amp;Formati:</translation>
+        <translation>&amp;תסדירים:</translation>
     </message>
     <message>
         <location filename="../src/ui/clipboarddialog.ui" line="112"/>
         <source>C&amp;ontent:</source>
-        <translation>&amp;Sadržaj:</translation>
+        <translation>&amp;תוכן:</translation>
     </message>
     <message>
         <location filename="../src/ui/clipboarddialog.ui" line="205"/>
         <source>Remove Format</source>
-        <translation>Ukloni format</translation>
+        <translation>הסרת תסדיר</translation>
     </message>
     <message>
         <location filename="../src/gui/clipboarddialog.cpp" line="82"/>
         <source>Item Content</source>
-        <translation>Sadržaj elementa</translation>
+        <translation>תוכן פריט</translation>
     </message>
     <message>
         <location filename="../src/gui/clipboarddialog.cpp" line="151"/>
         <source>&lt;strong&gt;Size:&lt;/strong&gt; %1 bytes</source>
         <comment>Size of clipboard/item data in bytes</comment>
-        <translation>&lt;strong&gt;Veličina:&lt;/strong&gt; %1 bajta</translation>
+        <translation>&lt;strong&gt;גודל&lt;/strong&gt; %1 ביתים</translation>
     </message>
 </context>
 <context>
@@ -391,27 +381,27 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/app/clipboardserver.cpp" line="104"/>
         <source>CopyQ server is already running.</source>
-        <translation>CopyQ poslužitelj je već pokrenut.</translation>
+        <translation>שרת CopyQ כבר מופעל.</translation>
     </message>
     <message>
         <location filename="../src/app/clipboardserver.cpp" line="368"/>
         <source>Cancel Active Commands</source>
-        <translation>Prekini aktivne naredbe</translation>
+        <translation>ביטול פקודות פעילות</translation>
     </message>
     <message>
         <location filename="../src/app/clipboardserver.cpp" line="369"/>
         <source>Cancel active commands and exit?</source>
-        <translation>Prekinuti aktivne naredbe i zatvoriti program?</translation>
+        <translation>לבטל פקודות פעילות ולצאת?</translation>
     </message>
     <message>
         <location filename="../src/app/clipboardserver.cpp" line="372"/>
         <source>Cancel Exiting</source>
-        <translation>Prekini zatvaranje programa</translation>
+        <translation>ביטול יציאה</translation>
     </message>
     <message>
         <location filename="../src/app/clipboardserver.cpp" line="373"/>
         <source>Exit Anyway</source>
-        <translation>Svejedno zatvori</translation>
+        <translation>לצאת בכל מקרה</translation>
     </message>
 </context>
 <context>
@@ -420,7 +410,7 @@ Naredbu je moguće postaviti u postavkama.</translation>
         <location filename="../src/gui/commandcompleter.cpp" line="221"/>
         <source>Ctrl+Space</source>
         <comment>Shortcut to show completion menu</comment>
-        <translation>Ctrl+Razmaknica</translation>
+        <translation>Ctrl+רווח</translation>
     </message>
 </context>
 <context>
@@ -428,67 +418,67 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="14"/>
         <source>Commands</source>
-        <translation>Naredbe</translation>
+        <translation>פקודות</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="26"/>
         <source>Define new commands that can be either invoked automatically on new clipboard content or by user from menu or using system shortcut.</source>
-        <translation>Odredi nove naredbe koje se mogu automatski pozvati na novom sadržaju međuspremnika ili koje korisnik može pozvati iz izbornika ili pomoću sustavskih prečaca.</translation>
+        <translation>הגדרת פקודות חדשות שניתן לעורר, באמצעות תוכן חדש בלוח־הגזרים, באופן אוטומטי, על ידי משתמש מהתפריט או באמצעות קיצורי דרך של המערכת.</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="51"/>
         <source>&amp;Find:</source>
-        <translation>&amp;Nađi:</translation>
+        <translation>&amp;חיפוש:</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="64"/>
         <source>&amp;Load Commands…</source>
-        <translation>&amp;Učitaj naredbe …</translation>
+        <translation>&amp;טעינת פקודות…</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="74"/>
         <source>Sa&amp;ve Selected…</source>
-        <translation>Spre&amp;mi odabrano …</translation>
+        <translation>&amp;שמירת פריטים שנבחרו…</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="84"/>
         <source>Copy Selected</source>
-        <translation>Kopiraj odabrano</translation>
+        <translation>העתקת פריטים שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/ui/commanddialog.ui" line="91"/>
         <source>Paste Commands</source>
-        <translation>Umetni naredbe</translation>
+        <translation>הדבקת פקודות</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="177"/>
         <source>Unsaved Changes</source>
-        <translation>Nespremljene promjene</translation>
+        <translation>שינויים שלא נשמרו</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="177"/>
         <source>Command dialog has unsaved changes.</source>
-        <translation>Dijalog naredbi sadrži nespremljene promjene.</translation>
+        <translation>קיימים שימויים שלא נשמרו בדו־שיח פקודה.</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="255"/>
         <source>Open Files with Commands</source>
-        <translation>Otvori datoteke s naredbama</translation>
+        <translation>פתיחת קובץ באמצעות פקודות</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="256"/>
         <source>Commands (*.ini);; CopyQ Configuration (copyq.conf copyq-*.conf)</source>
-        <translation>Naredbe (*.ini);; CopyQ konfiguracija (copyq.conf copyq-*.conf)</translation>
+        <translation>פקודות (*.ini);; תצורת CopyQ (copyq.conf copyq-*.conf)</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="267"/>
         <source>Save Selected Commands</source>
-        <translation>Spremi odabrane naredbe</translation>
+        <translation>שמירת פקודות שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/gui/commanddialog.cpp" line="268"/>
         <source>Commands (*.ini)</source>
-        <translation>Naredbe (*.ini)</translation>
+        <translation>פקודות (*.ini)</translation>
     </message>
 </context>
 <context>
@@ -496,47 +486,43 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="56"/>
         <source>Command contains list of programs with arguments which will be executed. For example:</source>
-        <translation>Naredba sadrži popis programa s argumentima koji će se izvršiti. Na primjer:</translation>
-    </message>
-    <message>
-        <source>Program argument %1 will be substituted for item text, and %2 through %9 for texts captured by regular expression.</source>
-        <translation type="vanished">Programski argument „%1” bit će zamijenjen za tekst elementa, a „%2” do „%9” za tekstove koji se pronađu regularnim izrazom.</translation>
+        <translation>פקודה שמכילה רשימת תוכניות עם משתנים שיבוצעו. לדוגמה:</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="60"/>
         <source>Program argument %1 will be substituted for item text.</source>
-        <translation>Programski argument %1 zamijenit će se za tekst elementa.</translation>
+        <translation>משתנה תוכנית %1 יחליף את מלל הפריט.</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="64"/>
         <source>Character %1 can be used to pass standard output to the next program.</source>
-        <translation>Znak „%1” može se koristiti za prosljeđivanje standardnog rezultata sljedećem programu.</translation>
+        <translation>ניתן להשתמש בתו %1 כדי להעביר פלט תני לתוכנית הבאה.</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="70"/>
         <source>Following syntax can be used to pass rest of the command as single parameter.</source>
-        <translation>Sljedeća sintaksa može se koristiti za prosljeđivanje ostatka naredbe kao jedan parametar.</translation>
+        <translation>ניתן להשתמש בתחביר הבא כדי להעביר את שאר הפקודה כפרמטר בודד.</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="73"/>
         <source>This gives same output as %1 but is more useful for longer commands.</source>
-        <translation>Ovo daje isti rezultat kao „%1”, ali je korisnije za duže naredbe.</translation>
+        <translation>מייצר פלט זהה ל־%1 אך שימושי יותר עבור פקודות ארוכות יותר.</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="80"/>
         <source>Functions listed below can be used as in following commands.</source>
-        <translation>Dolje nabrojane funkcije mogu se koristiti kao u sljedećim naredbama.</translation>
+        <translation>ניתן להשתמש בפונקציות המפורטות להלן כמו בפקודות הבאות.</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="81"/>
         <source>&amp;clipboard</source>
         <comment>Example tab name</comment>
-        <translation>&amp;međuspremnik</translation>
+        <translation>&amp;לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/gui/commandhelpbutton.cpp" line="115"/>
         <source>Show command help (F1)</source>
-        <translation>Prikaži naredbu za pomoć (F1)</translation>
+        <translation>הצגת עזרת פקודה (F1)</translation>
     </message>
 </context>
 <context>
@@ -544,138 +530,87 @@ Naredbu je moguće postaviti u postavkama.</translation>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="31"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Ime:</translation>
+        <translation>&amp;שם:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="41"/>
         <source>Command name shown in menu</source>
-        <translation>U izborniku prikazano ime naredbe</translation>
+        <translation>שם פקודה מוצג בתפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="56"/>
         <source>Type:</source>
-        <translation>Vrsta:</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="159"/>
-        <source>&amp;Shortcut:</source>
-        <translation>&amp;Prečac:</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="197"/>
-        <source>&amp;Global Shortcut:</source>
-        <translation>&amp;Globalni prečac:</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="243"/>
-        <source>Comman&amp;d</source>
-        <translation>Nare&amp;dba</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="275"/>
-        <source>&amp;Advanced</source>
-        <translation>&amp;Napredno</translation>
-    </message>
-    <message>
-        <source>Type of Action</source>
-        <translation type="vanished">Vrsta radnje</translation>
+        <translation>סוג:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="63"/>
         <source>Run the command automatically if clipboard has new content</source>
-        <translation>Pokreni naredbu automatski, ako međuspremnik ima novi sadržaj</translation>
+        <translation>להפעיל את הפקודה באופן אוטומטי אם בלוח־הגזירים יש תוכן חדש</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="66"/>
         <source>Auto&amp;matic</source>
         <extracomment>Type of command; triggered by whenever clipboard changes</extracomment>
-        <translation>Auto&amp;matski</translation>
+        <translation>אוטו&amp;מטי</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="79"/>
         <source>Show command in context menu of matching items</source>
-        <translation>Prikaži naredbu u kontekstualnom izborniku poklapajućih elemenata</translation>
+        <translation>הצגת פקודה בתפריט הקשר לפריטים מתאימים</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="82"/>
         <source>In M&amp;enu</source>
         <extracomment>Type of command; triggered by a custom application shortcut</extracomment>
-        <translation>U &amp;izborniku</translation>
+        <translation>ב&amp;תפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="95"/>
         <source>Global Shortcut</source>
         <extracomment>Type of command; triggered by a custom global/system shortcut</extracomment>
-        <translation>Globalni prečac</translation>
+        <translation>קיצור־דרך כללי</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="108"/>
         <source>Script</source>
         <extracomment>Type of command; allows to extend scripting capabilities</extracomment>
-        <translation>Skripta</translation>
+        <translation>תסריט</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="121"/>
         <source>Display</source>
         <extracomment>Type of command; allows change how items are displayed</extracomment>
-        <translation>Prikaz</translation>
+        <translation>מצג</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="159"/>
+        <source>&amp;Shortcut:</source>
+        <translation>&amp;קיצור־דרך:</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="197"/>
+        <source>&amp;Global Shortcut:</source>
+        <translation>&amp;קיצור־דרך כללי:</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="243"/>
+        <source>Comman&amp;d</source>
+        <translation>פ&amp;קודה</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="275"/>
+        <source>&amp;Advanced</source>
+        <translation>&amp;אפשרויות מתקדמות</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="316"/>
         <source>Match Items</source>
-        <translation>Poklopi elemente</translation>
+        <translation>התאמת פריטים</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="346"/>
         <source>&amp;Content:</source>
-        <translation>&amp;Sadržaj:</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Use command only for items whose text match this regular expression (leave empty to match anything).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Examples:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Match URL    &lt;span style=&quot; font-weight:600;&quot;&gt;^(https?|ftp)://&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Match PDF filenames    &lt;span style=&quot; font-weight:600;&quot;&gt;\.pdf$&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Match single character    &lt;span style=&quot; font-weight:600;&quot;&gt;^.$&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Match remote multimedia    &lt;span style=&quot; font-weight:600;&quot;&gt;^http://.*\.(ogv|vlc|mp4|mp3)$&lt;/span&gt;&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;Koristi naredbu samo za elemente, čiji se tekst poklapa s ovim regularnim izrazom (ostavi prazno za bilo koje poklapanje).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Primjeri:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Poklopi URL    &lt;span style=&quot; font-weight:600;&quot;&gt;^(https?|ftp)://&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Poklopi imena PDF datoteka    &lt;span style=&quot; font-weight:600;&quot;&gt;\.pdf$&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Poklopi jedan znak    &lt;span style=&quot; font-weight:600;&quot;&gt;^.$&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  Poklopi udaljenu multimediju    &lt;span style=&quot; font-weight:600;&quot;&gt;^http://.*\.(ogv|vlc|mp4|mp3)$&lt;/span&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="372"/>
-        <source>&amp;Window:</source>
-        <translation>&amp;Prozor:</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="382"/>
-        <source>&lt;p&gt;Use command only for items copied to clipboard from window with title text that matches this regular expression (leave empty to match any window). On macOS, this contains the application name followed by a dash (&amp;quot;-&amp;quot;) then the window title. E.g. &amp;quot;Safari - GitHub&amp;quot;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Koristi naredbu samo za elemente koji su kopirani u međuspremnik iz prozora s tekstom naslova, koji se poklapa s ovim regularnim izrazom (ostavi prazno za poklapanje s bilo kojim prozorom). Na macOS-u ovo sadrži ime programa, nakon kojeg slijedi crtica (&amp;quot;-&amp;quot;), a zatim naslov prozora. Npr. &amp;quot;Safari - GitHub&amp;quot;.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="389"/>
-        <source>For&amp;mat:</source>
-        <translation>For&amp;mat:</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="405"/>
-        <source>Data of this MIME type will be sent to standard input of command.
-Leave empty to disable this.</source>
-        <translation>Podaci ove MIME vrste bit će poslani na standardni unos naredbe.
-Ostavi prazno za deaktiviranje ovoga.</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/commandwidget.ui" line="416"/>
-        <source>&amp;Filter:</source>
-        <translation>&amp;Filtar:</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;Use commands only if filter command succeeds.&lt;/p&gt;
-
-&lt;p&gt;Item text is passed to &lt;b&gt;standard input&lt;/b&gt; of the filter command. The item is &lt;b&gt;matched only if the filter command exit code is 0&lt;/b&gt;.&lt;/p&gt;
-
-&lt;p&gt;Use &lt;b&gt;%1&lt;/b&gt; for item text passed as argument and &lt;b&gt;%2&lt;/b&gt; to &lt;b&gt;%9&lt;/b&gt; for arguments captured by regular expression (parts enclosed in parentheses).&lt;/p&gt;
-
-&lt;p&gt;Use &lt;b&gt;|&lt;/b&gt; to chain commands (pass standard output to next command).&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;Koristi naredbe samo ako naredba filtra uspije.&lt;/p&gt;
-
-&lt;p&gt;Tekst elementa proslijeđuje se &lt;b&gt;standardnom unosu&lt;/b&gt; naredbe filtra. Element se &lt;b&gt;poklapa samo, ako je izlazni kod naredbe filtra 0&lt;/b&gt;.&lt;/p&gt;
-
-&lt;p&gt;Koristi &lt;b&gt;%1&lt;/b&gt; za tekst elementa koji se proslijeđuje kao argument, a &lt;b&gt;%2&lt;/b&gt; do &lt;b&gt;%9&lt;/b&gt; za argumente dobivene regularnim izrazom (dijelovi uključeni u zagradama).&lt;/p&gt;
-
-&lt;p&gt;Koristi &lt;b&gt;|&lt;/b&gt; za povezivanje naredbi (proslijedi standardni rezultat sljedećoj naredbi).&lt;/p&gt;</translation>
+        <translation>&amp;תוכן:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="356"/>
@@ -689,90 +624,117 @@ Examples:
 - Match PDF filenames: \.pdf$
 - Match single character: ^.$
 - Match remote multimedia: ^http://.*\.(ogv|vlc|mp4|mp3)$</source>
-        <translation>Preskače naredbu ako tekst unosa ne odgovara ovom regularnom izrazu (ostavi prazno da odgovara svemu).
+        <translation>לדלג על הפקודה אם מלל הקלט לא תואם לביטוי הרגיל הבא (להשאיר ריק להתאים הכל).
 
-%2 do %9 u naredbi i filtru zamijenit će se snimljenim tekstovima.
+%2 עד %9 בפקודה יוחלפע במלל שנלכד.
 
-Primjeri:
+דוגמאות:
 
-- Uskladi URL: ^(https?|ftp)://
-- Uskladi imena PDF datoteka: \.pdf$
-- Uskladi jedan znak: ^.$
-- Uskladi udaljene multimedije: ^http://.*\.(ogv|vlc|mp4|mp3)$</translation>
+- התאמת כתובת URL: ^(https?|ftp)://
+- התאמת שם קובץ PDF: \.pdf$
+- התאמת תו יחיד: ^.$
+- התאמת רב־מדיה מרוחקת: ^http://.*\.(ogv|vlc|mp4|mp3)$</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="372"/>
+        <source>&amp;Window:</source>
+        <translation>&amp;חלון:</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="382"/>
+        <source>&lt;p&gt;Use command only for items copied to clipboard from window with title text that matches this regular expression (leave empty to match any window). On macOS, this contains the application name followed by a dash (&amp;quot;-&amp;quot;) then the window title. E.g. &amp;quot;Safari - GitHub&amp;quot;.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;להשתמש בפקודה רק עבור פריטים שהועתקו ללוח־הגזירים מחלון עם מלל כותרת התואם את הביטוי הרגיל הזה (להשאיר ריק כדי להתאים לכל חלון). ב־macOS, הביטוי כולל את שם היישומון כשמקף (&amp;quot;-&amp;quot;)מפריד בינו לבין כותרת החלון. לדוגמה. &amp;quot;Safari - GitHub&amp;quot;.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="389"/>
+        <source>For&amp;mat:</source>
+        <translation>תס&amp;דיר:</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="405"/>
+        <source>Data of this MIME type will be sent to standard input of command.
+Leave empty to disable this.</source>
+        <translation>נתונים מסוג MIME זה יישלחו כקלט פקודה תיקני.
+להשאיר ריק כדי להשבית זאת.</translation>
+    </message>
+    <message>
+        <location filename="../src/ui/commandwidget.ui" line="416"/>
+        <source>&amp;Filter:</source>
+        <translation>&amp;מסנן:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="435"/>
         <source>Skips the command if the filter command fails with non-zero exit code.</source>
-        <translation>Preskače naredbu ako naredba filtra završi kodom koji nije nula.</translation>
+        <translation>דילוג על הפקודה אם פקודת המסנן כשלה עם קוד יציאה לא־אפס.</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="447"/>
         <source>Action</source>
-        <translation>Radnja</translation>
+        <translation>פעולה</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="470"/>
         <source>Cop&amp;y to tab:</source>
-        <translation>&amp;Kopiraj u karticu:</translation>
+        <translation>העתקה ל&amp;לשונית:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="480"/>
         <source>Name of tab to copy new items into (leave empty not to copy)</source>
-        <translation>Ime kartice u koju se kopiraju novi elementi (ostavi prazno, da se ne kopiraju)</translation>
+        <translation>שם לשונית לתוכה יועתקו פריטים חדשים (להשאיר ריק כדי לא להעתיק)</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="492"/>
         <source>Remove matching item
 
 Note: If this is applied automatically, no other automatic commands are executed.</source>
-        <translation>Ukloni poklapajući element
+        <translation>הסרת פריט תואם
 
-Napomena: Ako se ovo automatski primijeni, ostale automatske naredbe se ne izvršavaju.</translation>
+הערה: אם מוחל באופן אוטומטי, פקודות אוטומטיות אחרות לא תתבצענה.</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="497"/>
         <source>&amp;Remove Item</source>
-        <translation>&amp;Ukloni element</translation>
+        <translation>&amp;הסרת פריט</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="507"/>
         <source>Menu Action</source>
-        <translation>Radnje u izborniku</translation>
+        <translation>פעולת תפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="528"/>
         <source>Hide window after command is activated from context menu of an item</source>
-        <translation>Sakrij prozor nakon aktiviranja naredbe u kontekstnom izborniku elementa</translation>
+        <translation>הסתרת חלון לאחר אפשור פקודה מפריט תפריט הקשר</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="531"/>
         <source>&amp;Hide main window after activation</source>
-        <translation>&amp;Sakrij glavni prozor nakon aktiviranja</translation>
+        <translation>&amp;הסתרת חלון ראשי לאחר אפשור</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="541"/>
         <source>Command options</source>
-        <translation>Opcije naredbe</translation>
+        <translation>אפשרויות פקודה</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="570"/>
         <source>O&amp;utput:</source>
-        <translation>Rez&amp;ultat:</translation>
+        <translation>פ&amp;לט:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="580"/>
         <source>Create items from standard output of the program (leave empty to disable)</source>
-        <translation>Stvori elemente iz standardnog rezultata programa (ostavi prazno za deaktiviranje)</translation>
+        <translation>יצירת פריטים מפלט תוכניות תיקני (להשאיר ריק כדי להשבית)</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="590"/>
         <source>&amp;Separator:</source>
-        <translation>&amp;Znak razdvajanja:</translation>
+        <translation>%מפריד:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="600"/>
         <source>Separator to match for splitting the output to multiple items</source>
-        <translation>Znak razdvajanja za rastavljanje rezultata u pojedinačne elemente</translation>
+        <translation>מפריד שמשמש התאמת פיצול הפלט לפריטים מרובים</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="603"/>
@@ -782,37 +744,37 @@ Napomena: Ako se ovo automatski primijeni, ostale automatske naredbe se ne izvr�
     <message>
         <location filename="../src/ui/commandwidget.ui" line="610"/>
         <source>Output &amp;tab:</source>
-        <translation>Kartica &amp;rezultata:</translation>
+        <translation>לשונית &amp;פלט:</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="620"/>
         <source>Save items in tab with given name (leave empty to save in first tab)</source>
-        <translation>Spremi elemente u karticu sa zadanim imenom (ostavi prazno za spremanje u prvu karticu)</translation>
+        <translation>שמירת פריטים בלשונית עם שם נתון (להשאיר ריק לשמירה בלשונית ראשונה)</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="637"/>
         <source>Show action dialog before executing the command</source>
-        <translation>Prikaži dijalog radnje prije izvršavanja naredbe</translation>
+        <translation>הצגת דו־שיח פעולה לפני ביצוע הפקודה</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="640"/>
         <source>&amp;Wait</source>
-        <translation>Č&amp;ekaj</translation>
+        <translation>&amp;המתנה</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="647"/>
         <source>Change item, don&apos;t create any new items</source>
-        <translation>Promijeni element, nenoj stvoriti nove elemente</translation>
+        <translation>שינוי פריט, לא ליצור פריטים חדשים</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="650"/>
         <source>Tr&amp;ansform</source>
-        <translation>Tr&amp;ansformiraj</translation>
+        <translation>ה&amp;תמרה</translation>
     </message>
     <message>
         <location filename="../src/ui/commandwidget.ui" line="722"/>
         <source>Show Advanced</source>
-        <translation>Prikaži napredne</translation>
+        <translation>הצגת אפשרויות מתקדמות</translation>
     </message>
 </context>
 <context>
@@ -820,185 +782,181 @@ Napomena: Ako se ovo automatski primijeni, ostale automatske naredbe se ne izvr�
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="62"/>
         <source>Background</source>
-        <translation>Stražnja boja</translation>
-    </message>
-    <message>
-        <source>Notes</source>
-        <translation type="vanished">Napomene</translation>
+        <translation>רקע</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="69"/>
         <source>Tooltips</source>
-        <translation>Opis alata</translation>
+        <translation>רמז־צץ</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="104"/>
         <source>Found</source>
-        <translation>Pronađeno</translation>
+        <translation>פריטים שנמצאו</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="111"/>
         <source>Selected</source>
-        <translation>Odabrano</translation>
+        <translation>פריטים שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="174"/>
         <source>Number</source>
-        <translation>Broj</translation>
+        <translation>מספר</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="181"/>
         <source>Normal</source>
-        <translation>Normalno</translation>
+        <translation>תקין</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="188"/>
         <source>Editor</source>
-        <translation>Uređivač</translation>
+        <translation>עורך</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="195"/>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation>גופן</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="223"/>
         <source>Alternate</source>
-        <translation>Zamjena</translation>
+        <translation>חילוף</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="230"/>
         <source>Foreground</source>
-        <translation>Prednja boja</translation>
+        <translation>קידמה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="251"/>
         <source>Notification</source>
-        <translation>Obavijest</translation>
+        <translation>הודעה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="283"/>
         <source>Show &amp;Number</source>
-        <translation>Prikaži &amp;broj</translation>
+        <translation>הצגת &amp;מספר</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="290"/>
         <source>Show scrollbars</source>
-        <translation>Prikaži klizne trake</translation>
+        <translation>הצגת סרגלי־גלילה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="293"/>
         <source>S&amp;crollbars</source>
-        <translation>&amp;Klizne trake</translation>
+        <translation>&amp;סרגלי־גלילה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="300"/>
         <source>Use icons from desktop environment whenever possible</source>
-        <translation>Koristi ikone radne površine kad god moguće</translation>
+        <translation>שימוש בסמלילי סביבת שולחן העבודה ככל שניתן</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="303"/>
         <source>S&amp;ystem Icons</source>
-        <translation>&amp;Ikone sustava</translation>
+        <translation>סמליל מ&amp;ערכת</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="310"/>
         <source>&amp;Antialias</source>
-        <translation>&amp;Zaglađivanje rubova</translation>
+        <translation>&amp;אנטיאלייסינג</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="319"/>
         <source>S&amp;et colors for tabs, tool bar and menus</source>
-        <translation>Postavi boj&amp;e za kartice, alatnu traku i izbornike</translation>
+        <translation>ה&amp;גדרת שבעים ללשוניות,סרגלי כלים ותפריטים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="341"/>
         <source>&amp;Reset Theme</source>
-        <translation>&amp;Vrati standardnu temu</translation>
+        <translation>&amp;שיצוב ערכת־נושא</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="348"/>
         <source>Theme:</source>
-        <translation>Tema:</translation>
+        <translation>ערכת־נושא:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="355"/>
         <source>&amp;Load Theme</source>
-        <translation>&amp;Učitaj temu</translation>
+        <translation>טעינת ערכת־נושא</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="362"/>
         <source>&amp;Save Theme</source>
-        <translation>&amp;Spremi temu</translation>
+        <translation>&amp;שמירת ערכת־נושא</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="369"/>
         <source>Edit current theme in external editor</source>
-        <translation>Uredi trenutačnu temu u vanjskom uređivaču</translation>
+        <translation>עריכת ערכת נושא נוכחית בעורך חיצוני</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="372"/>
         <source>E&amp;dit Theme</source>
-        <translation>Ure&amp;di temu</translation>
+        <translation>&amp;עריכת ערכת־נושא</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabappearance.ui" line="393"/>
         <source>Preview:</source>
-        <translation>Pretprikaz:</translation>
+        <translation>תצוגה מקדימה:</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="164"/>
         <source>Open Theme File</source>
-        <translation>Otvori datoteku teme</translation>
+        <translation>פתיחת קובץ ערכת נושא</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="174"/>
         <source>Save Theme File As</source>
-        <translation>Spremi datoteku teme kao</translation>
+        <translation>שמירת קובץ ערכת נושא בשם</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="193"/>
         <source>No External Editor</source>
-        <translation>Nema vanjskog uređivača</translation>
+        <translation>אין עורך חיצוני</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="194"/>
         <source>Set external editor command first!</source>
-        <translation>Najprije postavi naredbu za vanjski uređivač!</translation>
+        <translation>תחילה יש להגדיר פקודת עורך חיצוני!</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="394"/>
         <source>Abc</source>
         <comment>Preview text for font settings in appearance dialog</comment>
-        <translation>Abc</translation>
+        <translation>א-ב</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="476"/>
         <source>item</source>
         <comment>Search expression in preview in Appearance tab.</comment>
-        <translation>element</translation>
+        <translation>פריט</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="478"/>
         <source>Search string is %1.</source>
-        <translation>Znakovni niz za pretragu je „%1”.</translation>
+        <translation>מחרוזת חיפוש %1.</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="479"/>
         <source>Select an item and
 press F2 to edit.</source>
-        <translation>Odaberi element i
-pritisni F2 za uređivanje.</translation>
+        <translation>בחירת פריט ולחיצה
+על F2 לעריכה.</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="481"/>
         <source>Example item %1</source>
-        <translation>Element primjera %1</translation>
+        <translation>פריט דוגמה %1</translation>
     </message>
     <message>
         <location filename="../src/gui/configtabappearance.cpp" line="486"/>
         <source>Some random notes (Shift+F2 to edit)</source>
-        <translation>Neke slučajno odabrane napomene (Shift+F2 za uređivanje)</translation>
+        <translation>כמה הערות אקראיות (Shift+F2 לעריכה)</translation>
     </message>
 </context>
 <context>
@@ -1006,147 +964,147 @@ pritisni F2 za uređivanje.</translation>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="65"/>
         <source>&amp;Language:</source>
-        <translation>&amp;Jezik:</translation>
+        <translation>&amp;שפה:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="93"/>
         <source>Break text if it&apos;s too long to fit on line</source>
-        <translation>Prelomi tekst, ako je predugačak da bi stao u redak</translation>
+        <translation>פיצול מלל אם ארוך מכדי להתאים לשורה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="96"/>
         <source>Wrap l&amp;ong text</source>
-        <translation>Prel&amp;omi dugačak tekst</translation>
+        <translation>עיטוף מלל א&amp;רוך</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="103"/>
         <source>Keep main window above other windows</source>
-        <translation>Zadrži glavni prozor ispred ostalih prozora</translation>
+        <translation>להשאיר חלון ראשי מעל לחלונות אחרים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="106"/>
         <source>Alwa&amp;ys on Top</source>
-        <translation>Uvije&amp;k ispred ostalih</translation>
+        <translation>תמיד עליון</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="113"/>
         <source>Close main window when other application has focus</source>
-        <translation>Zatvori glavni prozor kad je fokusiran jedan drugi program</translation>
+        <translation>סגירת חלון ראשי כאשר יישומים אחרים במוקד</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="116"/>
         <source>Close When Unfocused</source>
-        <translation>Zatvori kad nije fokusiran</translation>
+        <translation>סגירה כאשר לא במוקד</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="123"/>
         <source>Enable to open windows on current screen. Disable to open windows where they were last closed</source>
-        <translation>Aktiviraj za otvaranje prozora na trenutačnom ekranu. Deaktiviraj za otvaranje prozora na mjestu gdje su zadnji put zatvoreni</translation>
+        <translation>לאפשר פתיחת חלונות במרקע הנוכחי. להשבית לפתיחת חלונות שנסגרו לאחרונה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="126"/>
         <source>O&amp;pen windows on current screen</source>
-        <translation>Otvori &amp;prozore na trenutačnom ekranu</translation>
+        <translation>פתיחת חלונות במרקע הנוכחי</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="133"/>
         <source>Confirm application exit</source>
-        <translation>Potvrdi zatvaranje programa</translation>
+        <translation>אישור יציאה מהישומון</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="136"/>
         <source>Confirm application e&amp;xit</source>
-        <translation>Potvrdi &amp;zatvaranje programa</translation>
+        <translation>אישור י&amp;ציאה מהישומון</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="146"/>
         <source>Run the application on system startup</source>
-        <translation>Pokreni program nakon pokretanja sustava</translation>
+        <translation>הפעלת היישומון עם אתחול המערכת</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="149"/>
         <source>&amp;Autostart</source>
-        <translation>&amp;Automatsko pokretanje</translation>
+        <translation>&amp;איתחול אוטומטי</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="156"/>
         <source>Support for Vi navigation keys (H, J, K, L and more), slash (/) key to search</source>
-        <translation>Podrška za navigacijske tipke za Vi (H, J, K, L i više), kosa crta (/) za pretragu</translation>
+        <translation>תמיכה במפתחות ניווט Vi (H, J, K, L ועוד), מפתח לוכסן ( /) לחיפוש</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="159"/>
         <source>&amp;Vi style navigation</source>
-        <translation>&amp;Vi stil navigacija</translation>
+        <translation>סגנון ניווט Vi</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="166"/>
         <source>Save and restore history of item filters</source>
-        <translation>Spremi i obnovi kronologiju filtara elemenata</translation>
+        <translation>שמירה ושחזור היסטוריית מסנני הפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="169"/>
         <source>Save Filter History</source>
-        <translation>Spremi kronologiju filtara</translation>
+        <translation>שמירת היסטורית סינון</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="176"/>
         <source>Automatically show popup to complete function, type and variable names in commands</source>
-        <translation>Automatski prikaži skočni prozor za dovršavanje funkcije, vrste i imena varijabli u naredbama</translation>
+        <translation>הצגת חלון־צץ באופן אוטומטי להשלמת פעולה, סוג ושמות משתנים בפקודות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="179"/>
         <source>Auto-complete Commands</source>
-        <translation>Automatsko dovršavanje naredbi</translation>
+        <translation>פקודות השלמה אוטומטית</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="186"/>
         <source>Clipboard Manipulation</source>
-        <translation>Manipuliranje međuspremnikom</translation>
+        <translation>טפלול לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="198"/>
         <source>Allow to paste copied content the same way as mouse selections (usually by pressing middle mouse button)</source>
-        <translation>Dozvoli umetanje kopiranog sadržaja na isti način kao odabir mišem (obično pritiskom srednje tipke miša)</translation>
+        <translation>לאפשרהדבקת תוכן מועתק באופן זההל בחירת עכבר (בדרך כלל על ידי לחיצה על לחצן עכבראמצעי)</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="201"/>
         <source>(&amp;3) Paste clipboard with mouse</source>
-        <translation>(&amp;3) Umetni međuspremnik s mišem</translation>
+        <translation>(&amp;3) הדבקת לוח־גזירים באמצעות עכבר</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="208"/>
         <source>Allow to paste mouse selections using shortcut (usually Ctrl+V or Shift+Insert)</source>
-        <translation>Dozvoli umetanje odabira mišem koristeći prečac (obično Ctrl+V ili Shift+Insert)</translation>
+        <translation>לאפשר הדבקת פריטים שנבחרו באמצעות עכבר תוך שימוש בקיצור־דרך (בדרך כלל Ctrl+V או Shift+Insert)</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="211"/>
         <source>(&amp;4) Paste mouse selection with keyboard</source>
-        <translation>(&amp;4) Umetni odabir mišem s tipkovnicom</translation>
+        <translation>(&amp;4) הדבקת בחירת עכבר באמצעות מקלדת</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="218"/>
         <source>Save clipboard in history</source>
-        <translation>Spremi međuspremnik u kronologiju</translation>
+        <translation>שמירת היסטורית לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="221"/>
         <source>(&amp;1) Store clipboard</source>
-        <translation>(&amp;1) Spremi međuspremnik</translation>
+        <translation>(&amp;1) אחסון לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="231"/>
         <source>Save text selected with mouse (primary selection) in history</source>
-        <translation>Spremi mišem odabrani tekst (primarni odabir) u kronologiju</translation>
+        <translation>שמירת מלל שנבחר באמצעות עכבר (בחירה ראשית) בהיסטוריה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="234"/>
         <source>(&amp;2) Store text selected using mouse</source>
-        <translation>(&amp;2) Spremi mišem odabrani tekst</translation>
+        <translation>(&amp;2) אחסון מלל שנבחר באמצעות עכבר</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabgeneral.ui" line="241"/>
         <source>(&amp;5) Run automatic commands on selection</source>
-        <translation>(&amp;5) Pokreni automatske naredbe na odabir</translation>
+        <translation>(&amp;5) הפעלת פקודות אוטומטיות בעת בחירה</translation>
     </message>
 </context>
 <context>
@@ -1154,31 +1112,31 @@ pritisni F2 za uređivanje.</translation>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="65"/>
         <source>Maximum &amp;number of items in history:</source>
-        <translation>&amp;Maksimalni broj elemenata u kronologiji:</translation>
+        <translation>כמות פריטים מירבית בהיסטוריה:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="77"/>
         <source>Maximum number of items in each tab</source>
-        <translation>Maksimalni broj elemenata u svakoj kartici</translation>
+        <translation>מספר פריטים מירבי בכל לשונית</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="105"/>
         <source>&amp;Unload tab after an interval in minutes:</source>
-        <translation>&amp;Ukloni karticu nakon određenog vremena u minutama:</translation>
+        <translation>&amp;פריקת לשונית לאחר מרווח־זמן בדקות:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="117"/>
         <source>Unload each tab from memory after specified number of minutes of inactivity.
 
 Set to 0 not to unload tabs.</source>
-        <translation>Ukloni svaku karticu iz memorije nakon određenog vremena neaktivnosti u minutama.
+        <translation>פריקת כל לשונית מהזיכרון לאחר חוסר פילות של מספר דקות מוגדר.
 
-Postavi na 0 za neuklanjanje kartica.</translation>
+הגדרת 0 כדי לא לפרוק לשוניות.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="144"/>
         <source>External editor command (%&amp;1 is file to edit):</source>
-        <translation>Naredba za vanjski uređivač („%&amp;1” je datoteka koja se uređuje):</translation>
+        <translation>פקודת עורך חיצוני (%&amp;1 הוא קובץ לעריכה):</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="154"/>
@@ -1188,8 +1146,8 @@ Postavi na 0 za neuklanjanje kartica.</translation>
     notepad %1
     gvim -f %1
     xterm -e vim %1</source>
-        <translation>Naredba za vanjski uređivač („%1” je datoteka koja se uređuje).
-  Primjeri:
+        <translation>פקודת עורך חיצוני (%1 הוא קובץ לעריכה).
+דוגמאות:
     gedit %1
     notepad %1
     gvim -f %1
@@ -1198,104 +1156,104 @@ Postavi na 0 za neuklanjanje kartica.</translation>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="169"/>
         <source>Ta&amp;b for storing clipboard:</source>
-        <translation>&amp;Kartica za spremanje međuspremnika:</translation>
+        <translation>ל&amp;שונית לאחסון לוח־גזירים:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="179"/>
         <source>Name of tab that will automatically store new clipboard content.
 
 Leave empty to disable automatic storing.</source>
-        <translation>Ime kartice koja će automatski spremiti novi sadržaj međuspremnika.
+        <translation>שם לשונית שתאחסן תוכן לוח־גזירים חדש באופן אוטומטי.
 
-Ostavi prazno za deaktiviranje automatskog spremanja.</translation>
+להשראיר ריק להשבתת אחסון אוטומטי.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="193"/>
         <source>Leave unchecked for Return key to save edited item and Ctrl+Return create new line.
 
 Note: Edited items can be saved with F2 disregarding this option.</source>
-        <translation>Ostavi neoznačeno, kako bi se tipkom Return spremio uređeni element i tipkama Ctrl+Return stvorio novi redak.
+        <translation>להשאיר לא מסומן כדי שמקש Return ישמור פריט שנערך ו־Ctrl+Return ייצור שורה חדשה.
 
-Napomena: Uređeni elementi mogu se spremiti pomoću tipke F2, zanemarujući ovu opciju.</translation>
+הערה: ניתן לשמור פריטים שנערכו באמצעות F2 מבלי להתחשב באפשרות זו.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="198"/>
         <source>Sa&amp;ve edited item with Ctrl+Return and create new line with Return key</source>
-        <translation>&amp;Spremi uređeni element pomoću Ctrl+Return i stvori novi redak pomoću tipke Return</translation>
+        <translation>ש&amp;מירת פריטים שנערכו עם קיצור־דרך Ctrl+Return ויצירת קו חדש עם מקש Return</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="205"/>
         <source>Show single line description of each item.
 
 Use Item Preview to display whole items.</source>
-        <translation>Prikaži jednoredni opis svakog elementa.
+        <translation>הצג תיאור כל פריט בשורה אחת.
 
-Koristi „Element &gt; Prikaži pretprikaz” za prikaz cijelih elemenata.</translation>
+ניתן להשתמש בתצוגת פריט מקדימה כדי להציג פריטים בשלמותם.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="210"/>
         <source>Sho&amp;w simple items</source>
-        <translation>&amp;Prikaži jednostavne elemente</translation>
+        <translation>ה&amp;צגת פריטים פשוטים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="217"/>
         <source>Enable searching for numbers, otherwise pressing a digit key activates item on that position</source>
-        <translation>Aktiviraj traženje brojeva, inače se pritiskom numeričke tipke aktivira element na tom položaju</translation>
+        <translation>לאפשר חיפוש מספרים, אחרת לחיצה על מקש ספרות תשפעל פריט במיקום זה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="220"/>
         <source>S&amp;earch for numbers</source>
-        <translation>&amp;Traži brojeve</translation>
+        <translation>&amp;חיפוש מספרים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="230"/>
         <source>Activate item with single click</source>
-        <translation>Aktiviraj element jednim pritiskom</translation>
+        <translation>שפעול פריט בהקשה יחידה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="237"/>
         <source>After item is activated (double-click or Enter key), copy it to clipboard and ...</source>
-        <translation>Nakon aktiviranja elementa (dvaput pritisni mišem ili tipku Enter), kopiraj ga u međuspremnik i …</translation>
+        <translation>לאחר שפעול פריט (הקשת עכבר כפולה או מקש Enter), הוא יועתק לוח־גזירים ו...</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="243"/>
         <source>Move item to the top of the list after it is activated</source>
-        <translation>Premjesti element na vrh popisa nakon što ste se aktivira</translation>
+        <translation>להעביר פריט לראש הרשימה לאחר שהוא שופעל</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="246"/>
         <source>Move item to the t&amp;op</source>
-        <translation>Premjesti element na &amp;vrh</translation>
+        <translation>העברת פריט ל&amp;ראש הרשימה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="253"/>
         <source>Close main window after item is activated</source>
-        <translation>Zatvori glavni prozor nakon što ste se element aktivira</translation>
+        <translation>סגירת החלון הראשי לאחר שופעל פריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="256"/>
         <source>&amp;Close main window</source>
-        <translation>&amp;Zatvori glavni prozor</translation>
+        <translation>&amp;סגירת חלון ראשי</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="263"/>
         <source>Focus last window after item is activated</source>
-        <translation>Fokusiraj zadnji prozor nakon aktiviranja elementa</translation>
+        <translation>להתמקד על חלון אחרון לאחר שופעל פריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="266"/>
         <source>&amp;Focus last window</source>
-        <translation>&amp;Fokusiraj zadnji prozor</translation>
+        <translation>&amp;מיקוד על חלון אחרון</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="273"/>
         <source>Paste to current window after item is activated</source>
-        <translation>Umetni u trenutačni prozor nakon što ste se element aktivira</translation>
+        <translation>הדבקה לחלון הנוכחי לאחר הפעלת פריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabhistory.ui" line="276"/>
         <source>&amp;Paste to current window</source>
-        <translation>U&amp;metni u trenutačni prozor</translation>
+        <translation>ה&amp;דבקה לחלון נוכחי</translation>
     </message>
 </context>
 <context>
@@ -1303,95 +1261,95 @@ Koristi „Element &gt; Prikaži pretprikaz” za prikaz cijelih elemenata.</tra
     <message>
         <location filename="../src/ui/configtablayout.ui" line="62"/>
         <source>Show/Hide</source>
-        <translation>Prikaži/Sakrij</translation>
+        <translation>הצגה/הסתרה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="68"/>
         <source>Hide tabs (press Alt key to show)</source>
-        <translation>Sakrij kartice (pritisni tipku Alt za prikaz)</translation>
+        <translation>הסתרת לשוניות (לחיצה על מקש Alt להצגה)</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="71"/>
         <source>Hi&amp;de tabs</source>
-        <translation>Sa&amp;krij kartice</translation>
+        <translation>ה&amp;סתרת לשוניות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="78"/>
         <source>Hide toolbar</source>
-        <translation>Sakrij alatnu traku</translation>
+        <translation>הסתרת סרגל כלים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="81"/>
         <source>Hide too&amp;lbar</source>
-        <translation>Sakrij &amp;alatnu traku</translation>
+        <translation>הסתרת סרגל &amp;כלים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="88"/>
         <source>Hide tool&amp;bar labels</source>
-        <translation>Sakrij &amp;oznake alatne trake</translation>
+        <translation>הסתרת תויות סרגל כלים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="95"/>
         <source>Hide main window when closed</source>
-        <translation>Sakrij glavni prozor kad se zatvori</translation>
+        <translation>הסתרת חלון ראשי בעת סגירה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="98"/>
         <source>Hide &amp;main window</source>
-        <translation>Sakrij g&amp;lavni prozor</translation>
+        <translation>הסתרת חלון &amp;ראשי</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="108"/>
         <source>Layout and Transparency</source>
-        <translation>Prikaz i prozirnost</translation>
+        <translation>עימוד ושקיפות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="117"/>
         <source>Show tree with tabs instead of tab bar</source>
-        <translation>Prikaži stablo s karticama umjesto trake kartica</translation>
+        <translation>הצגת עץ לשוניות במקום סרגל לשוניות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="120"/>
         <source>Tab T&amp;ree</source>
-        <translation>Stablo s ka&amp;rticama</translation>
+        <translation>עץ ל&amp;שוניות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="127"/>
         <source>&amp;Focused transparency:</source>
-        <translation>Prozirnost &amp;fokusiranog:</translation>
+        <translation>מיקוד שקיפות:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="139"/>
         <source>Transparency of main window if focused.
 
 Note: This is not supported on all systems.</source>
-        <translation>Prozirnost glavnog prozora kad je fokusiran.
+        <translation>שקיפות החלון הראשי אם הוא במוקד.
 
-Napomena: Ovo nije podržano u svim sustavima.</translation>
+הערה: לא נתמך בכול המערכות.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="169"/>
         <source>&amp;Unfocused transparency:</source>
-        <translation>Prozirnost &amp;nefokusiranog:</translation>
+        <translation>&amp;שקיפות בלתי ממוקדת:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="181"/>
         <source>Transparency of main window if unfocused.
 
 Note: This is not supported on all systems.</source>
-        <translation>Prozirnost glavnog prozora kad nije fokusiran.
+        <translation>שקיפות החלון הראשי אם לא במוקד.
 
-Napomena: Ovo nije podržano u svim sustavima.</translation>
+הערה: לא נתמך בכול המערכות.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="211"/>
         <source>Show number of items in tabs</source>
-        <translation>Prikaži broj elemenata u karticama</translation>
+        <translation>הצגת מספר פריטים בלשוניות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtablayout.ui" line="214"/>
         <source>Sho&amp;w Item Count</source>
-        <translation>Prikaži &amp;broj elemenata</translation>
+        <translation>ה&amp;צגת מספר פריטים</translation>
     </message>
 </context>
 <context>
@@ -1399,47 +1357,47 @@ Napomena: Ovo nije podržano u svim sustavima.</translation>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="65"/>
         <source>&amp;Notification position:</source>
-        <translation>&amp;Položaj obavijesti:</translation>
+        <translation>&amp;איות הודעה:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="77"/>
         <source>Position on screen for notifications</source>
-        <translation>Položaj obavijesti na ekranu</translation>
+        <translation>איות הודעות על המרקע</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="81"/>
         <source>Top</source>
-        <translation>Gore</translation>
+        <translation>מעלה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="86"/>
         <source>Bottom</source>
-        <translation>Dolje</translation>
+        <translation>מטה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="91"/>
         <source>Top Right</source>
-        <translation>Gore desno</translation>
+        <translation>מעלה מימין</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="96"/>
         <source>Bottom Right</source>
-        <translation>Dolje desno</translation>
+        <translation>מטה מימין</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="101"/>
         <source>Bottom Left</source>
-        <translation>Dolje lijevo</translation>
+        <translation>מטה משמאל</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="106"/>
         <source>Top Left</source>
-        <translation>Gore lijevo</translation>
+        <translation>מעלה משמאל</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="129"/>
         <source>Int&amp;erval in seconds to display notifications:</source>
-        <translation>Vrij&amp;eme u sekundama za prikaz obavijesti:</translation>
+        <translation>מרווח־זמן בשניות להצגת הודעות:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="141"/>
@@ -1448,75 +1406,75 @@ Napomena: Ovo nije podržano u svim sustavima.</translation>
 Set to 0 to disable this.
 
 Set to -1 to keep visible until clicked.</source>
-        <translation>Vrijeme u sekundama za prikaz obavijesti za novi sadržaj međuspremnika ili ako se element kopira u međuspremnik (samo ako je glavni prozor zatvoren).
+        <translation>מרווח־זמן בשניות להצגת התראה על תוכן חדש או העתקת פריט ללוח־הגזירים (רק כאשר החלון הראשי סגור).
 
-Postavi na 0 za deaktiviranje ove mogućnosti.
+הגדרת 0 כדי להשבית אפשרות זו.
 
-Postavi na -1 za prikazivanje obavijesti, sve dok se ne pritisne.</translation>
+הגדרת 1 כדי להישאר גלוי עד להקשה.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="173"/>
         <source>Num&amp;ber of lines for clipboard notification:</source>
-        <translation>&amp;Broj redaka za obavijesti međuspremnika:</translation>
+        <translation>מספר שורות להודעות לוח־גזירים:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="185"/>
         <source>Number of lines to show for new clipboard content.
 
 Set to 0 to disable.</source>
-        <translation>Broj prikazanih redaka za novi sadržaj međuspremnika:
+        <translation>מספר השורות שיוצגו עבור תוכן חדש בלוח־הגזירים.
 
-Postavi 0 za deaktiviranje prikaza.</translation>
+הגדרת 0 כדי להשבית.</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="212"/>
         <source>&amp;Use native notifications</source>
-        <translation>&amp;Koristi izvorne obavijesti</translation>
+        <translation>&amp;שימוש בהודעות מובנות</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="221"/>
         <source>Notification Geometry (in screen points)</source>
-        <translation>Geometrija obavijesti (u ekranskim točkama)</translation>
+        <translation>גאומטרית הודעה (איות על המרקע)</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="227"/>
         <source>Hori&amp;zontal offset:</source>
-        <translation>&amp;Vodoravni odmak:</translation>
+        <translation>הסט א&amp;פקי:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="239"/>
         <source>Notification distance from left or right screen edge in screen points</source>
-        <translation>Udaljenost obavijesti od lijeve ili desne strane ruba ekrana u ekranskim točkama</translation>
+        <translation>מרחק הודעה מימין או משמאל לאיות שפת המרקע</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="267"/>
         <source>&amp;Vertical offset:</source>
-        <translation>&amp;Okomiti odmak:</translation>
+        <translation>הסט א&amp;נכי:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="279"/>
         <source>Notification distance from top or bottom screen edge in screen points</source>
-        <translation>Udaljenost obavijesti od gornje ili donje strane ruba ekrana u ekranskim točkama</translation>
+        <translation>מרחק הודעה מלמעלה או מלמטה לאיות שפת המרקע</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="307"/>
         <source>Maximum &amp;width:</source>
-        <translation>&amp;Maksimalna širina:</translation>
+        <translation>רוחב מ&amp;רבי:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="319"/>
         <source>Maximum width for notification in screen points</source>
-        <translation>Maksimalna širina obavijesti u ekranskim točkama</translation>
+        <translation>רוחב הודעה מירבי באיות המרקע</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="344"/>
         <source>Ma&amp;ximum height:</source>
-        <translation>Ma&amp;ksimalna visina:</translation>
+        <translation>&amp;גובה מרבי:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabnotifications.ui" line="356"/>
         <source>Maximum height for notification in screen points</source>
-        <translation>Maksimalna visina obavijesti u ekranskim točkama</translation>
+        <translation>גובה הודעה מירבי באיות המרקע</translation>
     </message>
 </context>
 <context>
@@ -1524,162 +1482,158 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="60"/>
         <source>Don&apos;t show tray icon; minimize window when closed</source>
-        <translation>Ne prikazuj ikonu programske trake; sklopi prozor kad se zatvori</translation>
+        <translation>לא להציג סמליל מגש; מזעור חלון בעת סבירה</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="63"/>
         <source>Disabl&amp;e tray</source>
-        <translation>D&amp;eaktiviraj programsku traku</translation>
+        <translation>ה&amp;שבתת מגש</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="70"/>
         <source>Show command for current clipboard content in tray menu</source>
-        <translation>Prikaži naredbe za trenutačni sadržaj međuspremnika u izborniku programske trake</translation>
+        <translation>הצגת פקודה לתוכן לוח־גזירים נוכחי בתפריט מגש</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="73"/>
         <source>Sho&amp;w commands for clipboard content</source>
-        <translation>Prikaži naredbe &amp;za sadržaj međuspremnika</translation>
+        <translation>הצ&amp;גת פקודה לתוכן לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="82"/>
         <source>N&amp;umber of items in tray menu:</source>
-        <translation>Broj elemenata &amp;u izborniku programske trake:</translation>
+        <translation>&amp;מספר הפריטים בתפריט מגש:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="92"/>
         <source>Number of items in tray menu</source>
-        <translation>Broj elemenata u izborniku programske trake</translation>
+        <translation>מספר הפריטים בתפריט מגש</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="119"/>
         <source>Show items from current tab in tray menu</source>
-        <translation>Prikaži elemente trenutačne kartice u izborniku programske trake</translation>
+        <translation>הצגת פריטים מלשונית נוכחית בתפריט מגש</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="122"/>
         <source>Show cu&amp;rrent tab in menu,</source>
-        <translation>P&amp;rikaži trenutačnu karticu u izborniku</translation>
+        <translation>הצגת לשונית נוכחית בתפריט,</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="129"/>
         <source>or &amp;choose other tab:</source>
-        <translation>ili odaberi jednu drugu karti&amp;cu:</translation>
+        <translation>או ב&amp;חירת לשונית אחרת:</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="145"/>
         <source>Name of tab to show in tray menu (empty for the first tab)</source>
-        <translation>Ime kartice za prikaz u izborniku programske trake (prazno za prvu karticu)</translation>
+        <translation>שם לשונית להצגה בתפריט מגש (להשאיר ריק להצגת לשונית ראשונה)</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="170"/>
         <source>Paste item to current window after selecting it in menu</source>
-        <translation>Umetni element u trenutačni prozor nakon što ste se odabere u izborniku</translation>
+        <translation>הדבקת פריט לחלון נוכחי לאחר בחירתו בתפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="173"/>
         <source>&amp;Paste activated item to current window</source>
-        <translation>&amp;Umetni aktivirani element u trenutačni prozor</translation>
+        <translation>הדבקת פריט משופעל לחלון נוכחי</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="180"/>
         <source>Show image preview next to menu items</source>
-        <translation>Prikaži pretprikaz slike pored elemenata izbornika</translation>
+        <translation>הצגת תצוגת תמונה מקדימה ליד פריטי תפריט</translation>
     </message>
     <message>
         <location filename="../src/ui/configtabtray.ui" line="183"/>
         <source>Sh&amp;ow image preview as menu item icon</source>
-        <translation>Prikaži pretprikaz slike ka&amp;o ikonu elementa izbornika</translation>
+        <translation>ה&amp;צגת תצוגה מקדימה של תמונות כסמליל פריט תפריט</translation>
     </message>
 </context>
 <context>
     <name>ConfigurationManager</name>
     <message>
-        <source>Configuration</source>
-        <translation type="vanished">Konfiguracija</translation>
+        <location filename="../src/ui/configurationmanager.ui" line="20"/>
+        <source>Preferences</source>
+        <translation>העדפות</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="159"/>
         <source>General</source>
-        <translation>Opće</translation>
+        <translation>כללי</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="160"/>
         <source>Layout</source>
-        <translation>Raspored</translation>
+        <translation>עימוד</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="161"/>
         <source>History</source>
-        <translation>Kronologija</translation>
+        <translation>היסטוריה</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="162"/>
         <source>Tray</source>
-        <translation>Programska traka</translation>
+        <translation>מגש</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="163"/>
         <source>Notifications</source>
-        <translation>Obavijesti</translation>
+        <translation>הודעות</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="164"/>
         <source>Tabs</source>
-        <translation>Kartice</translation>
+        <translation>לשוניות</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="165"/>
         <source>Items</source>
-        <translation>Elementi</translation>
+        <translation>פריטים</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="166"/>
         <source>Shortcuts</source>
-        <translation>Prečaci</translation>
+        <translation>קיצורי־דרך</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="167"/>
         <source>Appearance</source>
-        <translation>Izgled</translation>
+        <translation>מראה</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="441"/>
         <source>Invalid value for option &quot;%1&quot;</source>
-        <translation>Neispravna vrijednost za opciju „%1”</translation>
+        <translation>ערך לא תקין לאפשרות &quot;%1&quot;</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="486"/>
         <source>Reset preferences?</source>
-        <translation>Vratiti postavke na standardne vrijednosti?</translation>
+        <translation>האם לשצב העדפות?</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="487"/>
         <source>This action will reset all your preferences (in all tabs) to default values.&lt;br /&gt;&lt;br /&gt;Do you really want to &lt;strong&gt;reset all preferences&lt;/strong&gt;?</source>
-        <translation>Ova radnja vraća sve postavke (u svim karticama) na standardne vrijednosti.&lt;br /&gt;&lt;br /&gt;Zaista želiš &lt;strong&gt;vratiti sve postavke&lt;/strong&gt; na standardne vrijednosti?</translation>
+        <translation>פעולה זו תשצב את כל ההעדפות (בכל הלשוניות) לערכי ברירת מחדל.&lt;br /&gt;&lt;br /&gt; האם &lt;strong&gt; לשצב את כל ההעדפות &lt;/strong&gt;?</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="589"/>
         <source>Restart Required</source>
-        <translation>Zahtijeva ponovno pokretanje</translation>
+        <translation>נדרש אתחול</translation>
     </message>
     <message>
         <location filename="../src/gui/configurationmanager.cpp" line="590"/>
         <source>Language will be changed after application is restarted.</source>
-        <translation>Jezik će se promijeniti nakon ponovnog pokretanja programa.</translation>
-    </message>
-    <message>
-        <location filename="../src/ui/configurationmanager.ui" line="20"/>
-        <source>Preferences</source>
-        <translation>Postavke</translation>
+        <translation>שפה תשתנה לאחר שתחול היישומון.</translation>
     </message>
 </context>
 <context>
     <name>FileWatcher</name>
     <message>
-        <location filename="../plugins/itemsync/filewatcher.cpp" line="875"/>
+        <location filename="../plugins/itemsync/filewatcher.cpp" line="569"/>
         <source>Failed to create synchronization directory &quot;%1&quot;!</source>
-        <translation>Neuspjelo stvaranje mape za sinkronizaciju „%1”!</translation>
+        <translation>יצירת מחיצת סנכרון &quot;%1&quot; כשלה!</translation>
     </message>
 </context>
 <context>
@@ -1688,7 +1642,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
         <location filename="../src/gui/filtercompleter.cpp" line="172"/>
         <source>Alt+Down</source>
         <comment>Filter completion shortcut</comment>
-        <translation>Alt+Dolje</translation>
+        <translation>Alt+Down</translation>
     </message>
 </context>
 <context>
@@ -1696,13 +1650,13 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/iconselectbutton.cpp" line="21"/>
         <source>Select Icon…</source>
-        <translation>Odberi ikonu …</translation>
+        <translation>בחירת סמליל…</translation>
     </message>
     <message>
         <location filename="../src/gui/iconselectbutton.cpp" line="56"/>
         <source>...</source>
         <comment>Select/browse icon.</comment>
-        <translation>…</translation>
+        <translation>...</translation>
     </message>
 </context>
 <context>
@@ -1710,22 +1664,22 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/iconselectdialog.cpp" line="151"/>
         <source>Select Icon</source>
-        <translation>Odberi ikonu</translation>
+        <translation>בחירת סמליל</translation>
     </message>
     <message>
         <location filename="../src/gui/iconselectdialog.cpp" line="158"/>
         <source>Browse...</source>
-        <translation>Pregledaj …</translation>
+        <translation>דפדוף...</translation>
     </message>
     <message>
         <location filename="../src/gui/iconselectdialog.cpp" line="204"/>
         <source>Open Icon file</source>
-        <translation>Otvori datoteku ikone</translation>
+        <translation>פתיחת קובץ סמליל</translation>
     </message>
     <message>
         <location filename="../src/gui/iconselectdialog.cpp" line="205"/>
         <source>Image Files (*.png *.jpg *.jpeg *.bmp *.ico *.svg)</source>
-        <translation>Slikovne datoteke (*.png *.jpg *.jpeg *.bmp *.ico *.svg)</translation>
+        <translation>קובצי תמונה (*.png *.jpg *.jpeg *.bmp *.ico *.svg)</translation>
     </message>
 </context>
 <context>
@@ -1733,111 +1687,30 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/ui/importexportdialog.ui" line="17"/>
         <source>&amp;All</source>
-        <translation>&amp;Sve</translation>
+        <translation>&amp;הכול</translation>
     </message>
     <message>
         <location filename="../src/ui/importexportdialog.ui" line="27"/>
         <source>&amp;Tabs:</source>
-        <translation>&amp;Kartice:</translation>
+        <translation>&amp;לשוניות:</translation>
     </message>
     <message>
         <location filename="../src/ui/importexportdialog.ui" line="44"/>
         <source>Co&amp;nfiguration</source>
-        <translation>Ko&amp;nfiguracija</translation>
+        <translation>תי&amp;צור</translation>
     </message>
     <message>
         <location filename="../src/ui/importexportdialog.ui" line="51"/>
         <source>Co&amp;mmands</source>
-        <translation>Na&amp;redbe</translation>
+        <translation>&amp;הכול</translation>
     </message>
 </context>
 <context>
     <name>ItemEditor</name>
     <message>
-        <source>editor exit code is %1</source>
-        <translation type="vanished">kod za zatvaranje uređivača je „%1”</translation>
-    </message>
-    <message>
-        <source>Editor command: %1</source>
-        <translation type="vanished">Naredba za uređivač: %1</translation>
-    </message>
-    <message>
         <location filename="../src/item/itemeditor.cpp" line="139"/>
         <source>Editor command failed (see logs)</source>
-        <translation>Naredba uređivača nije uspjela (pogledaj dnevnike)</translation>
-    </message>
-</context>
-<context>
-    <name>ItemEditorWidget</name>
-    <message>
-        <source>Save</source>
-        <translation type="vanished">Spremi</translation>
-    </message>
-    <message>
-        <source>Save Item (&lt;strong&gt;F2&lt;/strong&gt;)</source>
-        <translation type="vanished">Spremi element (&lt;strong&gt;F2&lt;/strong&gt;)</translation>
-    </message>
-    <message>
-        <source>F2</source>
-        <comment>Shortcut to save item editor changes</comment>
-        <translation type="vanished">F2</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Prekini</translation>
-    </message>
-    <message>
-        <source>Cancel Editing and Revert Changes</source>
-        <translation type="vanished">Prekini uređivanje i poništi promjene</translation>
-    </message>
-    <message>
-        <source>Escape</source>
-        <comment>Shortcut to revert item editor changes</comment>
-        <translation type="vanished">Escape</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation type="vanished">Poništi</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation type="vanished">Ponovi</translation>
-    </message>
-    <message>
-        <source>Font</source>
-        <translation type="vanished">Font</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation type="vanished">Podebljano</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation type="vanished">Ukošeno</translation>
-    </message>
-    <message>
-        <source>Underline</source>
-        <translation type="vanished">Podcrtano</translation>
-    </message>
-    <message>
-        <source>Strikethrough</source>
-        <translation type="vanished">Precrtano</translation>
-    </message>
-    <message>
-        <source>Foreground</source>
-        <translation type="vanished">Prednja boja</translation>
-    </message>
-    <message>
-        <source>Background</source>
-        <translation type="vanished">Stražnja boja</translation>
-    </message>
-    <message>
-        <source>Erase Style</source>
-        <translation type="vanished">Izbriši stil</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Traži</translation>
+        <translation>פקודת עורך כשלה (נא לעיין ביומני פעולות)</translation>
     </message>
 </context>
 <context>
@@ -1845,118 +1718,114 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="403"/>
         <source>Encryption failed!</source>
-        <translation>Šifriranje neuspjelo!</translation>
-    </message>
-    <message>
-        <source>To share encrypted items on other computer or session, you&apos;ll need public and secret key files:&lt;ul&gt;&lt;li&gt;%1&lt;/li&gt;&lt;li&gt;%2&lt;br /&gt;(Keep this secret key in a safe place.)&lt;/li&gt;&lt;/ul&gt;</source>
-        <translation type="vanished">Za dijeljenje šifriranog elementa na drugom računalu ili primjerku programa, potrebne su javne i tajne datoteke ključeva:&lt;ul&gt;&lt;li&gt;%1&lt;/li&gt;&lt;li&gt;%2&lt;br /&gt;(Čuvaj ovaj tajni ključ na sigurnom mjestu.)&lt;/li&gt;&lt;/ul&gt;</translation>
+        <translation>הצפנה כשלה!</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="681"/>
         <source>To share encrypted items on other computer or session, you&apos;ll need these secret key files (keep them in a safe place):</source>
-        <translation>Za dijeljenje šifriranih stavki na drugom računalu ili sesiji trebat ćete ove datoteke s tajnim ključem (čuvajte ih na sigurnom mjestu):</translation>
+        <translation>כדי לשתף פריטים מוצפנים במחשב או בשיח אחר, קובצי מפתח סודי אלה נדרשים (יש לשמור אותם במקום בטוח):</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="756"/>
         <source>GnuPG must be installed to view encrypted tabs.</source>
-        <translation>Za prikaz šifriranih kartica GnuPG mora biti instaliran.</translation>
+        <translation>GnuPG חייב להיות מותקן כדי להציג לשוניות מוצפנות.</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="861"/>
         <source>Encrypt (needs GnuPG)</source>
-        <translation>Šifriraj (treba GnuPG)</translation>
+        <translation>הצפנה (נדרש GnuPG)</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="867"/>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="878"/>
         <source>Ctrl+L</source>
-        <translation>Ctrl+L</translation>
+        <translation type="unfinished">Ctrl+L</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="872"/>
         <source>Decrypt</source>
-        <translation>Dešifriraj</translation>
+        <translation>לפענח</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="883"/>
         <source>Decrypt and Copy</source>
-        <translation>Dešifriraj i kopiraj</translation>
+        <translation>פענוח והעתקה</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="888"/>
         <source>Ctrl+Shift+L</source>
-        <translation>Ctrl+Shift+L</translation>
+        <translation type="unfinished">Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="893"/>
         <source>Decrypt and Paste</source>
-        <translation>Dešifriraj i umetni</translation>
+        <translation>פענוח והדבקה</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="898"/>
         <source>Enter</source>
-        <translation>Enter</translation>
+        <translation type="unfinished">אנטר</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="955"/>
         <source>Failed to generate keys.</source>
-        <translation>Neuspjelo generiranje ključeva.</translation>
+        <translation>נכשל לייצר מפתחות.</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="967"/>
         <source>Error: %1</source>
-        <translation>Greška: %1</translation>
+        <translation>שגיאה: %1</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="972"/>
         <source>Done</source>
-        <translation>Gotovo</translation>
+        <translation>בוצע</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="988"/>
         <source>Creating new keys (this may take a few minutes)...</source>
-        <translation>Stvaranje novih ključeva (ovo može potrajati par minuta) …</translation>
+        <translation>יצירת מפתחות חדשים (עשוי לארוך מספר דקות).</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="989"/>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="992"/>
         <source>Cancel</source>
-        <translation>Prekini</translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="991"/>
         <source>Setting new password...</source>
-        <translation>Postavljanje nove lozinke …</translation>
+        <translation>קביעת סיסמה חדשה...</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="994"/>
         <source>Encryption keys &lt;strong&gt;must be generated&lt;/strong&gt; before item encryption can be used.</source>
-        <translation>Za šifriranje elemenata, najprije se&lt;strong&gt;moraju generirati&lt;/strong&gt; ključevi za šifriranje.</translation>
+        <translation>&lt;strong&gt;נדרש לחולל&lt;/strong&gt; מפתחות הצפנה לפני שניתן יהיה להשתמש בהצפנת פריט.</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="997"/>
         <source>Generate New Keys...</source>
-        <translation>Generiraj nove ključeve …</translation>
+        <translation>חילול מפתחות חדשים...</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="999"/>
         <source>Change Password...</source>
-        <translation>Promijeni lozinku …</translation>
+        <translation>שינוי ססמה...</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.cpp" line="1005"/>
         <source>Decryption failed!</source>
-        <translation>Dešifriranje neuspjelo!</translation>
+        <translation>פענוח כשל!</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.h" line="82"/>
         <source>Encryption</source>
-        <translation>Šifriranje</translation>
+        <translation>הצפנה</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencrypted.h" line="84"/>
         <source>Encrypt items and tabs.</source>
-        <translation>Šifriraj elemente i kartice.</translation>
+        <translation>הצפנת פריטים ולשוניות.</translation>
     </message>
 </context>
 <context>
@@ -1964,24 +1833,24 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemencrypted/itemencryptedsettings.ui" line="23"/>
         <source>To encrypt and decrypt items add appropriate commands under Commands tab.</source>
-        <translation>Za šifriranje i dešifriranje elemenata, dodaj odgovarajuće naredbe u kartici „Naredbe”.</translation>
+        <translation>כדי להצפין ולפענוח פריטים יש להוסיף פקודות מתאימות בלשונית פקודות.</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencryptedsettings.ui" line="70"/>
         <source>Sharing Encrypted Items and Tabs</source>
-        <translation>Dijeljenje šifriranih elemenata i kartica</translation>
+        <translation>שיתוף פריטים מוצפנים ולשוניות</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencryptedsettings.ui" line="92"/>
         <source>Encrypted Tabs</source>
-        <translation>Šifrirane kartice</translation>
+        <translation>לשוניות מוצפנות</translation>
     </message>
     <message>
         <location filename="../plugins/itemencrypted/itemencryptedsettings.ui" line="98"/>
         <source>&lt;p&gt;Specify names of tabs (one per line) which will be automatically encrypted and decrypted.&lt;/p&gt;
 &lt;p&gt;Set unload tab interval in History tab to safely unload decrypted items from memory.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Odredi imena kartica (jedno ime po retku) koje će se automatski šifrirati i dešifrirati.&lt;/p&gt;
-&lt;p&gt;Postavi vrijeme za uklanjanje kartice u kartici kronologije za sigurno uklanjanje dešifriranih elemenata iz memorije.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt; שמות לשוניות מסוימים (שם אחד בשורה) שיוצפנו ויפוענחו באופן אוטומטי.&lt;/p&gt;
+&lt;p&gt;יש להגדיר מרווח־זמן לפריקת לשונית בלשונית ההסטוריה, כדי לפרוק מהזכרון, באופן בטוח, פריטים לא מוצפנים.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -1989,12 +1858,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/item/itemfactory.cpp" line="75"/>
         <source>Corrupted Tab</source>
-        <translation>Oštećena kartica</translation>
+        <translation>לשונית משובשת</translation>
     </message>
     <message>
         <location filename="../src/item/itemfactory.cpp" line="76"/>
         <source>Not all items in the tab &lt;strong&gt;%1&lt;/strong&gt; were loaded successfully. Do you still want to load the tab and potentially lose some items?</source>
-        <translation>Sve stavke na kartici &lt;strong&gt;%1&lt;/strong&gt; nisu uspješno učitane. Želiš li i dalje učitati karticu i potencijalno izgubiti neke stavke?</translation>
+        <translation>לא כל הפריטים בלשונית &lt;strong&gt;%1&lt;/strong&gt; נטענו בהצלחה. האם לטעון את הלשונית בכול זאת עם התכנות לאובדן מספר פריטים?</translation>
     </message>
 </context>
 <context>
@@ -2002,17 +1871,17 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevim.h" line="25"/>
         <source>FakeVim</source>
-        <translation>FakeVim</translation>
+        <translation type="unfinished">FakeVim</translation>
     </message>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevim.h" line="27"/>
         <source>FakeVim plugin is part of Qt Creator</source>
-        <translation>Dodatak FakeVim je dio Qt Creatora</translation>
+        <translation>מתקע FakeVim הוא חלק מ־Qt Creator</translation>
     </message>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevim.h" line="29"/>
         <source>Emulate Vim editor while editing items.</source>
-        <translation>Emuliraj Vim uređivač tijekom uređivanja elemenata.</translation>
+        <translation>חיקוי עורך Vim בעת עריכת פריטים.</translation>
     </message>
 </context>
 <context>
@@ -2020,12 +1889,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevimsettings.ui" line="17"/>
         <source>Enable FakeVim for Editing Items</source>
-        <translation>Aktiviraj FakeVim za uređivanje elemenata</translation>
+        <translation>אפשור FakeVim לעריכת פריטים</translation>
     </message>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevimsettings.ui" line="24"/>
         <source>Path to Configuration File:</source>
-        <translation>Staza do konfiguracijske datoteke:</translation>
+        <translation>נתיב לקובץ תצורה:</translation>
     </message>
 </context>
 <context>
@@ -2033,12 +1902,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemimage/itemimage.h" line="65"/>
         <source>Images</source>
-        <translation>Slike</translation>
+        <translation>תמונות</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimage.h" line="67"/>
         <source>Display images.</source>
-        <translation>Prikaži slike.</translation>
+        <translation>הצגת תמונות.</translation>
     </message>
 </context>
 <context>
@@ -2046,42 +1915,42 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="19"/>
         <source>Maximum Image &amp;Width:</source>
-        <translation>Maksimalna š&amp;irina slike:</translation>
+        <translation>&amp;רוחב תמונה מרבי:</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="34"/>
         <source>Maximum width of image displayed in history (set to zero for original size)</source>
-        <translation>Maksimalna širina slike prikazana u kronologiji (postavi na nula za izvornu veličinu)</translation>
+        <translation>רוחב תמונה מרבי שמוצגת בהיסטוריה (קביעת אפס לגודל מקורי)</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="59"/>
         <source>Maximum Image &amp;Height:</source>
-        <translation>Maksimalna &amp;visina slike:</translation>
+        <translation>&amp;גובה תמונה מרבי:</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="77"/>
         <source>Maximum height of image displayed in history (set to zero for original size)</source>
-        <translation>Maksimalna visina slike prikazana u kronologiji (postavi na nula za izvornu veličinu)</translation>
+        <translation>גובה תמונה מרבי שתוצג בהיסטוריה (לקבוע אפס לגודל המקורי)</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="109"/>
         <source>&amp;Image editor command:</source>
-        <translation>&amp;Naredba za uređivač slika:</translation>
+        <translation>פקודת עורך &amp;תמונות:</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="119"/>
         <source>Editor command for supported image formats other than SVG.</source>
-        <translation>Naredba za uređivač koji podržava slikovne formate koji nisu SVG format.</translation>
+        <translation>פקודת עורך לתסדירי תמונות נתמכות מלבד SVG.</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="126"/>
         <source>&amp;SVG editor command:</source>
-        <translation>Naredba za uređivač &amp;SVG-ova:</translation>
+        <translation>פקודת עורך &amp;SVG:</translation>
     </message>
     <message>
         <location filename="../plugins/itemimage/itemimagesettings.ui" line="136"/>
         <source>Editor command for SVG image format.</source>
-        <translation>Naredba za uređivač slika u SVG formatu.</translation>
+        <translation>פקודת עורך לתסדירי תמונות SVG.</translation>
     </message>
 </context>
 <context>
@@ -2089,12 +1958,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemnotes/itemnotes.h" line="63"/>
         <source>Notes</source>
-        <translation>Napomene</translation>
+        <translation>הערות</translation>
     </message>
     <message>
         <location filename="../plugins/itemnotes/itemnotes.h" line="65"/>
         <source>Display notes for items.</source>
-        <translation>Prikaži napomene za elemente.</translation>
+        <translation>הצגת הערות פריטים.</translation>
     </message>
 </context>
 <context>
@@ -2102,27 +1971,27 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemnotes/itemnotessettings.ui" line="17"/>
         <source>Notes Position</source>
-        <translation>Položaj napomena</translation>
+        <translation>איות הערות</translation>
     </message>
     <message>
         <location filename="../plugins/itemnotes/itemnotessettings.ui" line="23"/>
         <source>Abo&amp;ve Item</source>
-        <translation>I&amp;znad elementa</translation>
+        <translation>מ&amp;על לפריט</translation>
     </message>
     <message>
         <location filename="../plugins/itemnotes/itemnotessettings.ui" line="30"/>
         <source>Below Ite&amp;m</source>
-        <translation>I&amp;spod elementa</translation>
+        <translation>מ&amp;תחת לפריט</translation>
     </message>
     <message>
         <location filename="../plugins/itemnotes/itemnotessettings.ui" line="37"/>
         <source>Beside Ite&amp;m</source>
-        <translation>Pored ele&amp;menta</translation>
+        <translation>ל&amp;צד פריט</translation>
     </message>
     <message>
         <location filename="../plugins/itemnotes/itemnotessettings.ui" line="47"/>
         <source>Show Too&amp;l Tip</source>
-        <translation>Prikaži &amp;savjete</translation>
+        <translation>הצגת רמ&amp;ז־צץ</translation>
     </message>
 </context>
 <context>
@@ -2130,44 +1999,36 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="59"/>
         <source>&amp;Add</source>
-        <translation>Dod&amp;aj</translation>
+        <translation>הו&amp;ספה</translation>
     </message>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="72"/>
         <source>&amp;Remove</source>
-        <translation>&amp;Ukloni</translation>
+        <translation>הס&amp;רה</translation>
     </message>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="82"/>
         <source>Move up</source>
         <extracomment>Button moves current item one row up</extracomment>
-        <translation>Pomakni gore</translation>
+        <translation>העברה מעלה</translation>
     </message>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="92"/>
         <source>Move down</source>
         <extracomment>Button moves current item one row down</extracomment>
-        <translation>Pomakni dolje</translation>
+        <translation>העברה מטה</translation>
     </message>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="102"/>
         <source>Move to the top</source>
         <extracomment>Button moves current item to the top</extracomment>
-        <translation>Pomakni skroz gore</translation>
+        <translation>לעבור לראש הרשימה</translation>
     </message>
     <message>
         <location filename="../src/ui/itemorderlist.ui" line="112"/>
         <source>Move to the bottom</source>
         <extracomment>Button moves current item to the bottom</extracomment>
-        <translation>Pomakni skroz dolje</translation>
-    </message>
-    <message>
-        <source>&amp;Up</source>
-        <translation type="vanished">&amp;Gore</translation>
-    </message>
-    <message>
-        <source>&amp;Down</source>
-        <translation type="vanished">&amp;Dolje</translation>
+        <translation>לעבור לתחתית‏ הרשימה</translation>
     </message>
 </context>
 <context>
@@ -2175,32 +2036,32 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itempinned/itempinned.cpp" line="182"/>
         <source>Cannot Remove Pinned Items</source>
-        <translation>Nije moguće ukloniti prikvačene elemente</translation>
+        <translation>לא ניתן להסיר פריטים נעוצים</translation>
     </message>
     <message>
         <location filename="../plugins/itempinned/itempinned.cpp" line="183"/>
         <source>Unpin items first to remove them.</source>
-        <translation>Za uklanjanje elemenata najprije ih otkvači.</translation>
+        <translation>חילוץ נעיצת פריטים כדי להסירם.</translation>
     </message>
     <message>
         <location filename="../plugins/itempinned/itempinned.cpp" line="347"/>
         <source>Pin</source>
-        <translation>Prikvači</translation>
+        <translation>נעיצה</translation>
     </message>
     <message>
         <location filename="../plugins/itempinned/itempinned.cpp" line="355"/>
         <source>Unpin</source>
-        <translation>Otkvači</translation>
+        <translation>חילוץ נעיצה</translation>
     </message>
     <message>
         <location filename="../plugins/itempinned/itempinned.h" line="83"/>
         <source>Pinned Items</source>
-        <translation>Prikvačeni elementi</translation>
+        <translation>פריטים נעוצים</translation>
     </message>
     <message>
         <location filename="../plugins/itempinned/itempinned.h" line="86"/>
         <source>&lt;p&gt;Pin items to lock them in current row and avoid deletion (unless unpinned).&lt;/p&gt;&lt;p&gt;Provides shortcuts and scripting functionality.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Prikvači elemente da bi se zaključali u trenutačnom retku i da bi se izbjeglo brisanje (osim ako nisu otkvačeni).&lt;/p&gt;&lt;p&gt;Omogućuje upotrebu prečaca i skriptanja.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;לנעוץ פריטים ולנעול אותם בשורה הנוכחית ולמנוע מחיקה (אלא אם הנעיצה חולצה).&lt;/p&gt;&lt;p&gt;מאפשר קיצורי־דרך ויכולות תסרוט.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2209,27 +2070,27 @@ Postavi 0 za deaktiviranje prikaza.</translation>
         <location filename="../plugins/itemsync/itemsync.cpp" line="111"/>
         <source>Browse...</source>
         <comment>Button text for opening file dialog to select synchronization directory</comment>
-        <translation>Pregledaj …</translation>
+        <translation>דפדוף...</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.cpp" line="762"/>
         <source>Open Directory for Synchronization</source>
-        <translation>Otvori mapu za sinkronizaciju</translation>
+        <translation>פתיחת מחיצה לסינכרון</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.cpp" line="776"/>
         <source>Failed to create synchronization directory</source>
-        <translation>Neuspjelo stvaranje mape za sinkronizaciju</translation>
+        <translation>יצירת מחיצת סינכרון כשלה</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.h" line="120"/>
         <source>Synchronize</source>
-        <translation>Sinkroniziraj</translation>
+        <translation>סינכרון</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.h" line="122"/>
         <source>Synchronize items and notes with a directory on disk.</source>
-        <translation>Sinkroniziraj elemente i napomene s mapom na disku.</translation>
+        <translation>סינכרון פריטים והערות עם מחיצה על כונן.</translation>
     </message>
 </context>
 <context>
@@ -2237,17 +2098,17 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemsync/itemsync.cpp" line="427"/>
         <source>Failed to synchronize tab &quot;%1&quot; with directory &quot;%2&quot;!</source>
-        <translation>Neuspjelo sinkroniziranje kartice „%1” s mapom „%2”!</translation>
+        <translation>סינכרון לשונת &quot;%1&quot; עם מחיצה &quot;%2&quot; כשל!</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.cpp" line="462"/>
         <source>Remove Items?</source>
-        <translation>Ukloniti elemente?</translation>
+        <translation>האם להסיר פריטים?</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsync.cpp" line="463"/>
         <source>Do you really want to &lt;strong&gt;remove items and associated files&lt;/strong&gt;?</source>
-        <translation>Zaista želiš &lt;strong&gt;ukloniti elemente i povezane datoteke&lt;/strong&gt;?</translation>
+        <translation>האם &lt;strong&gt;להסיר פריטים וקבצים מוסמכים&lt;/strong&gt;?</translation>
     </message>
 </context>
 <context>
@@ -2255,46 +2116,46 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="24"/>
         <source>Synchronization Tabs and Directories</source>
-        <translation>Sinkronizacija kartica i mapa</translation>
+        <translation>סנכרון לשוניות ומחיצות</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="42"/>
         <source>&lt;p&gt;Synchronize contents of &lt;strong&gt;tab&lt;/strong&gt; with directory with given &lt;strong&gt;path&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Set &lt;strong&gt;empty path&lt;/strong&gt; not to save items in &lt;strong&gt;tab&lt;/strong&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Sinkroniziraj sadržaj &lt;strong&gt;kartice&lt;/strong&gt; s mapom zadane &lt;strong&gt;staze&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Postavi &lt;strong&gt;praznu stazu&lt;/strong&gt; kako se elementi ne bi spremali u &lt;strong&gt;karticu&lt;/strong&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;סנכרון תוכן &lt;strong&gt;לשונית&lt;/strong&gt; עם מחיצה ב&lt;strong&gt;נתיב&lt;/strong&gt; נתון.&lt;/p&gt;
+&lt;p&gt;הגדרת&lt;strong&gt; נתיב ריק&lt;/strong&gt; כדי לא לשמור פריטים ב&lt;strong&gt;לשונית&lt;/strong&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="63"/>
         <source>Tab Name</source>
-        <translation>Ime kartice</translation>
+        <translation>שם לשונית</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="68"/>
         <source>Path</source>
-        <translation>Staza</translation>
+        <translation>נתיב</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="88"/>
         <source>Files to Item Data Formats</source>
-        <translation>Datoteke u datotečne formate elemenata</translation>
+        <translation>קבצים לתסדירי נתוני פריט</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="106"/>
         <source>&lt;p&gt;Set media type to &lt;strong&gt;-&lt;/strong&gt; (minus character) to ignore files. Any other unknown or hidden files are ignored.&lt;/p&gt;
 &lt;p&gt;Example: Load &lt;strong&gt;txt&lt;/strong&gt; file extension as &lt;strong&gt;text/plain&lt;/strong&gt; media type.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Za zanemarivanje datoteka, postavi vrstu medija na &lt;strong&gt;-&lt;/strong&gt; (crtica). Sve ostale nepoznate ili skrivene datoteke se zanemaruju.&lt;/p&gt;
-&lt;p&gt;Primjer: Učitaj datotečni nastavak &lt;strong&gt;txt&lt;/strong&gt; kao &lt;strong&gt;tekstualnu/običnu&lt;/strong&gt; vrstu medija.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;הגדרת סוג מדיה ל&lt;strong&gt;&apos;-&apos;&lt;/strong&gt; (סימן חיסור) כדי להתעלם מקבצים. קבצים לא ידועים או מוסתרים אחרים יתעלמו.&lt;/p&gt;
+&lt;p&gt;דוגמה: טעינת קובץ בסיומת &lt;strong&gt;txt&lt;/strong&gt; כסוג מדיה &lt;strong&gt;מלל/רגיל&lt;/strong&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="121"/>
         <source>Extensions</source>
-        <translation>Nastavci</translation>
+        <translation>הרחבות</translation>
     </message>
     <message>
         <location filename="../plugins/itemsync/itemsyncsettings.ui" line="126"/>
         <source>Item Media Type</source>
-        <translation>Medijska vrsta elementa</translation>
+        <translation>סיג פריט מדיה</translation>
     </message>
 </context>
 <context>
@@ -2302,56 +2163,48 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="145"/>
         <source>Add a Tag</source>
-        <translation>Dodaj oznaku</translation>
+        <translation>הוספת תג</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="150"/>
         <source>Remove a Tag</source>
-        <translation>Ukloni oznaku</translation>
-    </message>
-    <message>
-        <source>Tag as %1</source>
-        <translation type="vanished">Označi kao „%1”</translation>
-    </message>
-    <message>
-        <source>Remove tag %1</source>
-        <translation type="vanished">Ukloni oznaku „%1”</translation>
+        <translation>הסרת תג</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="171"/>
         <source>Toggle Tag %1</source>
-        <translation>Uključi/Isključi oznaku %1</translation>
+        <translation>מיתוג תג %1</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="605"/>
         <source>Cannot Remove Items With a Locked Tag</source>
-        <translation>Nije moguće ukloniti elemente sa zaključanom oznakom</translation>
+        <translation>לא ניתן להסיר פריט כשתג נעול</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="606"/>
         <source>Untag items first to remove them.</source>
-        <translation>Za uklanjanje elemenata najprije ih odznači.</translation>
+        <translation>יש להסיר תגים מפריטים לפני שניתן יהיה להסירם.</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="742"/>
         <source>Important</source>
         <comment>Tag name for example command</comment>
-        <translation>Važno</translation>
+        <translation>פריטים חשובים</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.cpp" line="772"/>
         <source>Clear all tags</source>
-        <translation>Ukloni sve oznake</translation>
+        <translation>לנקות את כל התגים</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.h" line="111"/>
         <source>Tags</source>
-        <translation>Oznake</translation>
+        <translation>תגים</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtags.h" line="113"/>
         <source>Display tags for items.</source>
-        <translation>Prikaži oznake za elemente.</translation>
+        <translation>הצגת תגי פריטים.</translation>
     </message>
 </context>
 <context>
@@ -2359,47 +2212,47 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="17"/>
         <source>Menu items for adding and removing custom tags can be added and customized in Commands dialog.</source>
-        <translation>Elementi izbornika za dodavanje i uklanjanje prilagođenih oznaka mogu se dodati i prilagoditi u dijalogu „Naredbe”.</translation>
+        <translation>ניתן להוסיף ולהתאים אישית פריטי תפריט להוספת והסרת תגים מותאמים אישית בדו־שיח פקודות.</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="27"/>
         <source>More info is available on &lt;a href=&quot;https://copyq.readthedocs.io/en/latest/tags.html&quot;&gt;wiki page&lt;/a&gt;.</source>
-        <translation>Daljnje informacije dostupne su na &lt;a href=&quot;https://copyq.readthedocs.io/en/latest/tags.html&quot;&gt;wiki stranici&lt;/a&gt;.</translation>
+        <translation>מידע נוסף זמין בעמוד ויקי &lt;a href=&quot;https://copyq.readthedocs.io/en/latest/tags.html&quot;&gt;&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="38"/>
         <source>Tag Name</source>
-        <translation>Ime oznake</translation>
+        <translation>שם תג</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="43"/>
         <source>Match</source>
-        <translation>Poklapanje</translation>
+        <translation>התאמה</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="48"/>
         <source>Style Sheet</source>
-        <translation>Definicija stilova</translation>
+        <translation>גיליון סגנון</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="53"/>
         <source>Color</source>
-        <translation>Boja</translation>
+        <translation>צבע</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="58"/>
         <source>Icon</source>
-        <translation>Ikona</translation>
+        <translation>סמליל</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="63"/>
         <source>Lock</source>
-        <translation>Lokot</translation>
+        <translation>לנעול</translation>
     </message>
     <message>
         <location filename="../plugins/itemtags/itemtagssettings.ui" line="66"/>
         <source>Avoid removing item</source>
-        <translation>Izbjegni uklanjanje elementa</translation>
+        <translation>להימנע הסרת פריט</translation>
     </message>
 </context>
 <context>
@@ -2407,12 +2260,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemtext/itemtext.h" line="63"/>
         <source>Text</source>
-        <translation>Tekst</translation>
+        <translation>מלל</translation>
     </message>
     <message>
         <location filename="../plugins/itemtext/itemtext.h" line="65"/>
         <source>Display plain text and simple HTML items.</source>
-        <translation>Prikaži običan tekst i jednostavne HTML elemente.</translation>
+        <translation>הצגת מלל ופריטHTML פשוטים.</translation>
     </message>
 </context>
 <context>
@@ -2420,40 +2273,22 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemtext/itemtextsettings.ui" line="17"/>
         <source>Save and display HTML and rich text</source>
-        <translation>Spremi i prikaži HTML i formatirani tekst</translation>
+        <translation>שמירה והצגת HTML ןמלל עשיר</translation>
     </message>
     <message>
         <location filename="../plugins/itemtext/itemtextsettings.ui" line="26"/>
         <source>Maximum number of lines to display (0 to show all):</source>
-        <translation>Maksimalni broj prikazanih redaka (0 za prikaz svih):</translation>
+        <translation>מספר קווים מרבי לתצוגה (0 כדי להראות את הכל):</translation>
     </message>
     <message>
         <location filename="../plugins/itemtext/itemtextsettings.ui" line="60"/>
         <source>Maximum height in pixels (0 for no limit):</source>
-        <translation>Maksimalna visina u pikselima (0 za neograničenu):</translation>
+        <translation>גובה מרבי בפיקסלים (0 ללא הגבלה):</translation>
     </message>
     <message>
         <location filename="../plugins/itemtext/itemtextsettings.ui" line="92"/>
         <source>Default style sheet:</source>
-        <translation>Standardna definicija stilova:</translation>
-    </message>
-</context>
-<context>
-    <name>ItemWebLoader</name>
-    <message>
-        <source>Web</source>
-        <translation type="vanished">Web</translation>
-    </message>
-    <message>
-        <source>Display web pages.</source>
-        <translation type="vanished">Prikaži web-stranice.</translation>
-    </message>
-</context>
-<context>
-    <name>ItemWebSettings</name>
-    <message>
-        <source>Maximum height in pixels (0 for no limit):</source>
-        <translation type="vanished">Maksimalna visina u pikselima (0 za neograničenu):</translation>
+        <translation>גיליון סגנון בררת מחדל:</translation>
     </message>
 </context>
 <context>
@@ -2461,156 +2296,148 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/ui/logdialog.ui" line="14"/>
         <source>Log</source>
-        <translation>Log-zapis</translation>
+        <translation>יומן־רשומות</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="330"/>
+        <location filename="../src/gui/mainwindow.cpp" line="283"/>
         <source>CopyQ Items (*.cpq)</source>
-        <translation>CopyQ elementi (*.cpq)</translation>
+        <translation>פרטי CopyQ (*cpq)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="677"/>
+        <location filename="../src/gui/mainwindow.cpp" line="645"/>
         <source>&amp;Show/Hide</source>
-        <translation>Prikaž&amp;i/Sakrij</translation>
+        <translation>ה&amp;צגה/הסתרה</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="715"/>
+        <location filename="../src/gui/mainwindow.cpp" line="683"/>
         <source>Exit?</source>
-        <translation>Zatvoriti?</translation>
+        <translation>לצאת?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="716"/>
+        <location filename="../src/gui/mainwindow.cpp" line="684"/>
         <source>Do you want to &lt;strong&gt;exit&lt;/strong&gt; CopyQ?</source>
-        <translation>Želiš li &lt;strong&gt;zatvoriti&lt;/strong&gt; CopyQ?</translation>
+        <translation>האם &lt;strong&gt;לצאת&lt;/strong&gt; מ־CopyQ?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="780"/>
+        <location filename="../src/gui/mainwindow.cpp" line="748"/>
         <source>&amp;File</source>
-        <translation>&amp;Datoteka</translation>
+        <translation>&amp;קובץ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="826"/>
+        <location filename="../src/gui/mainwindow.cpp" line="794"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Uredi</translation>
+        <translation>&amp;עריכה</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="850"/>
+        <location filename="../src/gui/mainwindow.cpp" line="818"/>
         <source>&amp;Item</source>
-        <translation>&amp;Element</translation>
+        <translation>&amp;פריט</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="854"/>
+        <location filename="../src/gui/mainwindow.cpp" line="822"/>
         <source>&amp;Tabs</source>
-        <translation>&amp;Kartice</translation>
+        <translation>&amp;לשוניות</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="879"/>
+        <location filename="../src/gui/mainwindow.cpp" line="847"/>
         <source>&amp;Help</source>
-        <translation>&amp;Pomoć</translation>
+        <translation>&amp;עזרה</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="904"/>
+        <location filename="../src/gui/mainwindow.cpp" line="872"/>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nova kartica</translation>
+        <translation>&amp;לשונית חדשה</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="906"/>
+        <location filename="../src/gui/mainwindow.cpp" line="874"/>
         <source>Rename &amp;Group %1</source>
-        <translation>Ukloni &amp;grupu „%1”</translation>
+        <translation>שינוי שם &amp;קבוצה %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="908"/>
+        <location filename="../src/gui/mainwindow.cpp" line="876"/>
         <source>Re&amp;name Tab %1</source>
-        <translation>Preime&amp;nuj karticu „%1”</translation>
+        <translation>שינוי &amp;שם לשונית %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="910"/>
+        <location filename="../src/gui/mainwindow.cpp" line="878"/>
         <source>Re&amp;move Tab %1</source>
-        <translation>Ukl&amp;oni karticu „%1”</translation>
+        <translation>ה&amp;סרת לשונית %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="912"/>
+        <location filename="../src/gui/mainwindow.cpp" line="880"/>
         <source>Remove Group %1</source>
-        <translation>Ukloni grupu „%1”</translation>
+        <translation>הסרת קבוצה %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="914"/>
+        <location filename="../src/gui/mainwindow.cpp" line="882"/>
         <source>&amp;Change Tab Icon</source>
-        <translation>P&amp;romijeni ikonu kartice</translation>
+        <translation>ה&amp;חלפת סמליל לשונית</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="957"/>
+        <location filename="../src/gui/mainwindow.cpp" line="925"/>
         <source>&amp;Clipboard: %1</source>
         <comment>Tray menu clipboard item format</comment>
-        <translation>&amp;Međuspremnik: %1</translation>
+        <translation>&amp;לוח־גזירים: %1</translation>
     </message>
     <message>
-        <source>&amp;Enable Clipboard Storing</source>
-        <translation type="vanished">&amp;Aktiviraj spremanje međuspremnika</translation>
-    </message>
-    <message>
-        <source>&amp;Disable Clipboard Storing</source>
-        <translation type="vanished">D&amp;eaktiviraj spremanje međuspremnika</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mainwindow.cpp" line="2108"/>
-        <location filename="../src/gui/mainwindow.cpp" line="2230"/>
+        <location filename="../src/gui/mainwindow.cpp" line="2078"/>
+        <location filename="../src/gui/mainwindow.cpp" line="2200"/>
         <source>Options for Import</source>
-        <translation>Opcije za uvoz</translation>
+        <translation>אפשרויות ייבוא</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="2518"/>
+        <location filename="../src/gui/mainwindow.cpp" line="2488"/>
         <source>CopyQ Error</source>
         <comment>Notification error message title</comment>
-        <translation>CopyQ greška</translation>
+        <translation>שגיאת copyQ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="3874"/>
+        <location filename="../src/gui/mainwindow.cpp" line="3844"/>
         <source>Options for Export</source>
-        <translation>Opcije za izvoz</translation>
+        <translation>אפשרויות יצוא</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="3895"/>
+        <location filename="../src/gui/mainwindow.cpp" line="3865"/>
         <source>Export Error</source>
-        <translation>Greška izvoza</translation>
+        <translation>שגיאת ייצוא</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="3896"/>
+        <location filename="../src/gui/mainwindow.cpp" line="3866"/>
         <source>Failed to export file %1!</source>
-        <translation>Neuspio izvoz datoteke „%1”!</translation>
+        <translation>ייצוא קובץ %1 כשל!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="3988"/>
+        <location filename="../src/gui/mainwindow.cpp" line="3958"/>
         <source>Import Error</source>
-        <translation>Greška uvoza</translation>
+        <translation>שגיאת ייבוא</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="3989"/>
+        <location filename="../src/gui/mainwindow.cpp" line="3959"/>
         <source>Failed to import file %1!</source>
-        <translation>Neuspio uvoz datoteke „%1”!</translation>
+        <translation>ייבוא קוץ %1 כשל!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="4174"/>
+        <location filename="../src/gui/mainwindow.cpp" line="4144"/>
         <source>Remove All Tabs in Group?</source>
-        <translation>Ukloniti sve kartice iz grupe?</translation>
+        <translation>האם להסיר את כל התגים בקבוצה?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="4175"/>
+        <location filename="../src/gui/mainwindow.cpp" line="4145"/>
         <source>Do you want to remove &lt;strong&gt;all tabs&lt;/strong&gt; in group &lt;strong&gt;%1&lt;/strong&gt;?</source>
-        <translation>Želiš li ukloniti &lt;strong&gt;sve kartice&lt;/strong&gt; u grupi &lt;strong&gt;%1&lt;/strong&gt;?</translation>
+        <translation>האם לנסיר את &lt;strong&gt;כל הלשוניות&lt;/strong&gt; בקבוצה &lt;strong&gt;%1&lt;/strong&gt;?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="4222"/>
+        <location filename="../src/gui/mainwindow.cpp" line="4192"/>
         <source>Remove Tab?</source>
-        <translation>Ukloniti karticu?</translation>
+        <translation>האם להסיר לשונית?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mainwindow.cpp" line="4223"/>
+        <location filename="../src/gui/mainwindow.cpp" line="4193"/>
         <source>Do you want to remove tab &lt;strong&gt;%1&lt;/strong&gt;?</source>
-        <translation>Želiš li ukloniti karticu &lt;strong&gt;%1&lt;/strong&gt;?</translation>
+        <translation>האם להסיר לשונית&lt;strong&gt;%1&lt;/strong&gt;?</translation>
     </message>
 </context>
 <context>
@@ -2618,7 +2445,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../plugins/itemfakevim/itemfakevim.cpp" line="519"/>
         <source>Information</source>
-        <translation>Podaci</translation>
+        <translation>מידע</translation>
     </message>
 </context>
 <context>
@@ -2627,320 +2454,306 @@ Postavi 0 za deaktiviranje prikaza.</translation>
         <location filename="../src/common/appconfig.cpp" line="22"/>
         <source>&amp;clipboard</source>
         <comment>Default name of the tab that automatically stores new clipboard content</comment>
-        <translation>&amp;međuspremnik</translation>
+        <translation>&amp;לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/common/common.cpp" line="600"/>
         <source>&lt;HIDDEN&gt;</source>
         <comment>Label for hidden/secret clipboard content</comment>
-        <translation>&lt;SKRIVENO&gt;</translation>
+        <translation>&lt;מוסתר&gt;</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/common/common.cpp" line="606"/>
         <source>%1 (%n lines)</source>
         <comment>Label for multi-line text in clipboard</comment>
         <translation>
-            <numerusform>%1 (%n redak)</numerusform>
-            <numerusform>%1 (%n retka)</numerusform>
-            <numerusform>%1 (%n redaka)</numerusform>
+            <numerusform>%1 (%n שורה)</numerusform>
+            <numerusform>%1 (%n שורות)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../src/common/common.cpp" line="616"/>
         <source>&lt;IMAGE&gt;</source>
         <comment>Label for image in clipboard</comment>
-        <translation>&lt;SLIKA&gt;</translation>
+        <translation>&lt;תמונה&gt;</translation>
     </message>
     <message>
         <location filename="../src/common/common.cpp" line="618"/>
         <source>&lt;ITEMS&gt;</source>
         <comment>Label for copied items in clipboard</comment>
-        <translation>&lt;ELEMENTI&gt;</translation>
+        <translation>&lt;פריטים&gt;</translation>
     </message>
     <message>
         <location filename="../src/common/common.cpp" line="620"/>
         <source>&lt;EMPTY&gt;</source>
         <comment>Label for empty clipboard</comment>
-        <translation>&lt;PRAZNO&gt;</translation>
+        <translation>&lt;ריק&gt;</translation>
     </message>
     <message>
         <location filename="../src/common/common.cpp" line="622"/>
         <source>&lt;DATA&gt;</source>
         <comment>Label for data in clipboard</comment>
-        <translation>&lt;PODACI&gt;</translation>
+        <translation>&lt;נתונים&gt;</translation>
     </message>
     <message>
         <location filename="../src/common/shortcuts.cpp" line="32"/>
         <source>Backspace</source>
         <comment>Key to remove item or MIME on OS X</comment>
-        <translation>Tipka Backspace</translation>
+        <translation>רווח אחורי</translation>
     </message>
     <message>
         <location filename="../src/common/shortcuts.cpp" line="34"/>
         <source>Delete</source>
         <comment>Key to remove item or MIME</comment>
-        <translation>Tipka Delete</translation>
+        <translation>מחיקה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="42"/>
         <source>&amp;New Item</source>
-        <translation>&amp;Novi element</translation>
+        <translation>פריט &amp;חדש</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="44"/>
         <source>&amp;Import...</source>
-        <translation>U&amp;vezi …</translation>
+        <translation>&amp;ייבוא...</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="44"/>
         <source>Ctrl+I</source>
-        <translation>Ctrl+I</translation>
+        <translation type="unfinished">Ctrl+I</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="46"/>
         <source>&amp;Export...</source>
-        <translation>&amp;Izvezi …</translation>
+        <translation>&amp;ייצוא...</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="48"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Postavke …</translation>
+        <translation>&amp;העדפות...</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="48"/>
         <source>Ctrl+P</source>
-        <translation>Ctrl+P</translation>
-    </message>
-    <message>
-        <source>C&amp;ommands/Global Shortcuts...</source>
-        <translation type="vanished">Nared&amp;be/Globalni prečaci …</translation>
+        <translation type="unfinished">Ctrl+P</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="51"/>
         <source>C&amp;ommands...</source>
-        <translation>Nared&amp;be …</translation>
+        <translation>פ&amp;קודות...</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="52"/>
         <source>F6</source>
-        <translation>F6</translation>
+        <translation type="unfinished">F6</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="54"/>
         <source>Show &amp;Clipboard Content</source>
-        <translation>Prikaži sadržaj &amp;međuspremnika</translation>
+        <translation>הצגת תוכן לוח־&amp;גזירים</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="55"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation type="unfinished">Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="56"/>
         <source>&amp;Show Preview</source>
-        <translation>Prikaži &amp;pretprikaz</translation>
+        <translation>ה&amp;צגת תצוגה מקדימה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="57"/>
         <source>F7</source>
-        <translation>F7</translation>
+        <translation type="unfinished">F7</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="58"/>
         <source>&amp;Toggle Clipboard Storing</source>
-        <translation>&amp;Uklj/Isklj spremanje međuspremnika</translation>
+        <translation>מ&amp;תוג אחסון לוח־גזירים</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="59"/>
         <source>Ctrl+Shift+X</source>
-        <translation>Ctrl+Shift+X</translation>
+        <translation type="unfinished">Ctrl+Shift+X</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="60"/>
         <source>P&amp;rocess Manager</source>
-        <translation>Upravljač p&amp;rocesa</translation>
+        <translation>מנהל &amp;תהליכים</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="61"/>
         <source>Ctrl+Shift+Z</source>
-        <translation>Ctrl+Shift+Z</translation>
+        <translation type="unfinished">Ctrl+Shift+Z</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="62"/>
         <source>E&amp;xit</source>
-        <translation>&amp;Zatvori</translation>
+        <translation>יצי&amp;אה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="62"/>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation type="unfinished">Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="65"/>
         <source>&amp;Sort Selected Items</source>
-        <translation>&amp;Razvrstaj odabrane elemente</translation>
+        <translation>מיון פריטים שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="66"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
+        <translation type="unfinished">Ctrl+Shift+S</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="68"/>
         <source>&amp;Reverse Selected Items</source>
-        <translation>&amp;Obrni redoslijed odabranih elemenata</translation>
+        <translation>&amp;היפוך מיון פריטים שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="69"/>
         <source>Ctrl+Shift+R</source>
-        <translation>Ctrl+Shift+R</translation>
+        <translation type="unfinished">Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="71"/>
         <source>&amp;Paste Items</source>
-        <translation>&amp;Umetni elemente</translation>
+        <translation>ה&amp;דבקת פריטים</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="73"/>
         <source>&amp;Copy Selected Items</source>
-        <translation>&amp;Kopiraj odabrane elemente</translation>
+        <translation>ה&amp;עתקת פריטים שנבחרו</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="75"/>
         <source>&amp;Find</source>
-        <translation>N&amp;ađi</translation>
-    </message>
-    <message>
-        <source>Move to &amp;Clipboard</source>
-        <comment>copies selected items to clipboard and moves them to top (depending on settings)</comment>
-        <translation type="vanished">Premjesti u &amp;međuspremnik</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="106"/>
-        <source>A&amp;ctivate Items</source>
-        <comment>copies selected items to clipboard and moves them to top (depending on settings)</comment>
-        <translation>A&amp;ktivitaj elemente</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="109"/>
-        <source>&amp;Show Content...</source>
-        <translation>Prikaži &amp;sadržaj …</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="110"/>
-        <source>F4</source>
-        <translation>F4</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="111"/>
-        <source>&amp;Remove</source>
-        <translation>U&amp;kloni</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="113"/>
-        <source>&amp;Edit</source>
-        <translation>&amp;Uredi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="113"/>
-        <source>F2</source>
-        <translation>F2</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="115"/>
-        <source>Edit &amp;Notes</source>
-        <translation>Uredi &amp;napomene</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/menuitems.cpp" line="116"/>
-        <source>Shift+F2</source>
-        <translation>Shift+F2</translation>
-    </message>
-    <message>
-        <source>E&amp;dit with editor</source>
-        <translation type="vanished">Ure&amp;di s uređivačem</translation>
+        <translation>&amp;חיפוש</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="78"/>
         <source>Save Item</source>
-        <translation>Spremi element</translation>
+        <translation>שמירת פריט</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="79"/>
         <source>F2</source>
         <comment>Shortcut to save item editor changes</comment>
-        <translation>F2</translation>
+        <translation type="unfinished">F2</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="80"/>
         <source>Cancel Editing</source>
-        <translation>Prekini uređivanje</translation>
+        <translation>ביטול עריכה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="81"/>
         <source>Escape</source>
         <comment>Shortcut to revert item editor changes</comment>
-        <translation>Escape</translation>
+        <translation type="unfinished">Escape</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="82"/>
         <source>Undo</source>
-        <translation>Poništi</translation>
+        <translation>ביטול פעולה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="84"/>
         <source>Redo</source>
-        <translation>Ponovi</translation>
+        <translation>החזרת פעולה שבוטלה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="86"/>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation>גופן</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="88"/>
         <source>Bold</source>
-        <translation>Podebljano</translation>
+        <translation>תו מודגש</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="90"/>
         <source>Italic</source>
-        <translation>Kurziv</translation>
+        <translation>תו נטוי</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="92"/>
         <source>Underline</source>
-        <translation>Podcrtano</translation>
+        <translation>קו תחתון</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="94"/>
         <source>Strikethrough</source>
-        <translation>Precrtano</translation>
+        <translation>קו חוצה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="96"/>
         <source>Foreground</source>
-        <translation>Prednja boja</translation>
+        <translation>קידמה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="98"/>
         <source>Background</source>
-        <translation>Stražnja boja</translation>
+        <translation>רקע</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="100"/>
         <source>Erase Style</source>
-        <translation>Izbriši stil</translation>
+        <translation>סגנון מחיקה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="102"/>
         <source>Search</source>
-        <translation>Pretraga</translation>
+        <translation>חיפוש</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="106"/>
+        <source>A&amp;ctivate Items</source>
+        <comment>copies selected items to clipboard and moves them to top (depending on settings)</comment>
+        <translation>לש&amp;פעל פריטים</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="109"/>
+        <source>&amp;Show Content...</source>
+        <translation>ה&amp;צגת תוכן...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="110"/>
+        <source>F4</source>
+        <translation type="unfinished">F4</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="111"/>
+        <source>&amp;Remove</source>
+        <translation>ה&amp;סרה</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="113"/>
+        <source>&amp;Edit</source>
+        <translation>&amp;עריכה</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="113"/>
+        <source>F2</source>
+        <translation type="unfinished">F2</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="115"/>
+        <source>Edit &amp;Notes</source>
+        <translation>עריכת ה&amp;ערות</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/menuitems.cpp" line="116"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished">Shift+F2</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="117"/>
         <source>E&amp;dit with Editor</source>
-        <translation>Ure&amp;di s uređivačem</translation>
+        <translation>ע&amp;ריכה באמצעות עורך</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="118"/>
@@ -2950,7 +2763,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="119"/>
         <source>&amp;Action...</source>
-        <translation>&amp;Radnja …</translation>
+        <translation>&amp;פעולה...</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="119"/>
@@ -2960,47 +2773,47 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="122"/>
         <source>Move Up</source>
-        <translation>Premjesti prema gore</translation>
+        <translation>העברה מעלה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="123"/>
         <source>Ctrl+Up</source>
-        <translation>Ctrl+Gore</translation>
+        <translation>Ctrl+Up</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="124"/>
         <source>Move Down</source>
-        <translation>Premjesti prema dolje</translation>
+        <translation>העברה מטה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="125"/>
         <source>Ctrl+Down</source>
-        <translation>Ctrl+Dolje</translation>
+        <translation>Ctrl+Down</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="126"/>
         <source>Move to Top</source>
-        <translation>Premjesti na vrh</translation>
+        <translation>העברה לראש הרשימה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="127"/>
         <source>Ctrl+Home</source>
-        <translation>Ctrl+Početak</translation>
+        <translation>Ctrl+Home</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="128"/>
         <source>Move to Bottom</source>
-        <translation>Premjesti na kraj</translation>
+        <translation>העברה לתחתית הרשינה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="129"/>
         <source>Ctrl+End</source>
-        <translation>Ctrl+Kraj</translation>
+        <translation>Ctrl+End</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="131"/>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nova kartica</translation>
+        <translation>לשונית &amp;חדשה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="132"/>
@@ -3010,7 +2823,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="133"/>
         <source>R&amp;ename Tab</source>
-        <translation>Pr&amp;eimenuj karticu</translation>
+        <translation>שינוי &amp;שם לשונית</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="134"/>
@@ -3020,7 +2833,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="135"/>
         <source>Re&amp;move Tab</source>
-        <translation>U&amp;kloni karticu</translation>
+        <translation>ה&amp;סרת לשונית</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="136"/>
@@ -3030,7 +2843,7 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="137"/>
         <source>&amp;Change Tab Icon</source>
-        <translation>Pro&amp;mijeni ikonu kartice</translation>
+        <translation>ה&amp;חלפת סמליל לשונית</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="138"/>
@@ -3040,34 +2853,34 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="139"/>
         <source>Ne&amp;xt Tab</source>
-        <translation>S&amp;ljedeća kartica</translation>
+        <translation>הלשונית ה&amp;באה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="140"/>
         <source>Right</source>
         <comment>Default shortcut to focus next tab</comment>
-        <translation>Desno</translation>
+        <translation>ימין</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="142"/>
         <source>&amp;Previous Tab</source>
-        <translation>Pret&amp;hodna kartica</translation>
+        <translation>הלשונית ה&amp;קודמת</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="143"/>
         <source>Left</source>
         <comment>Default shortcut to focus previous tab</comment>
-        <translation>Lijevo</translation>
+        <translation>שמאל</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="146"/>
         <source>&amp;Help</source>
-        <translation>&amp;Pomoć</translation>
+        <translation>&amp;עזרה</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="148"/>
         <source>&amp;Show Log</source>
-        <translation>&amp;Prikaži log-zapis</translation>
+        <translation>הצגת יומן־&amp;פעולות</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="148"/>
@@ -3077,12 +2890,12 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="150"/>
         <source>&amp;About</source>
-        <translation>In&amp;formacije</translation>
+        <translation>על־&amp;אודות</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="153"/>
         <source>Open Item Context Menu</source>
-        <translation>Otvori kontekstni izbornik elementa</translation>
+        <translation>פתיחת תפריט הקשר של פריט</translation>
     </message>
     <message>
         <location filename="../src/gui/menuitems.cpp" line="154"/>
@@ -3093,50 +2906,35 @@ Postavi 0 za deaktiviranje prikaza.</translation>
     <message>
         <location filename="../src/item/itemfactory.cpp" line="437"/>
         <source>Tab %1 is corrupted or some CopyQ plugins are missing!</source>
-        <translation>Kartica „%1” je pokvarena ili neki CopyQ dodaci nedostaju!</translation>
+        <translation>לשונית %1 פגומה או שכמה מתקעי CopyQ חסרים!</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="227"/>
         <source>Session name must contain at most 16 characters
 which can be letters, digits, &apos;-&apos; or &apos;_&apos;!</source>
-        <translation>Ime sesije smije sadržavati najviše 16 znakova.
-Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
+        <translation>שם שיח חייב להכיל 16 תווים לכל היותר
+שיכולים להיות אותיות, ספרות, &apos;-&apos; או &apos;_&apos;!</translation>
     </message>
     <message numerus="yes">
-        <source>%1&lt;div align=&quot;right&quot;&gt;&lt;small&gt;&amp;mdash; %n lines &amp;mdash;&lt;/small&gt;&lt;/div&gt;</source>
-        <comment>Notification label for multi-line text in clipboard</comment>
-        <translation type="vanished">
-            <numerusform>%1&lt;div align=&quot;right&quot;&gt;&lt;small&gt;&amp;ndash; %n redak &amp;ndash;&lt;/small&gt;&lt;/div&gt;</numerusform>
-            <numerusform>%1&lt;div align=&quot;right&quot;&gt;&lt;small&gt;&amp;ndash; %n retka &amp;ndash;&lt;/small&gt;&lt;/div&gt;</numerusform>
-            <numerusform>%1&lt;div align=&quot;right&quot;&gt;&lt;small&gt;&amp;ndash; %n redaka &amp;ndash;&lt;/small&gt;&lt;/div&gt;</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>%1</source>
-        <comment>Notification label for single-line text in clipboard</comment>
-        <translation type="vanished">%1</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="2478"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="2482"/>
         <source>Text Copied (%n lines)</source>
         <comment>Notification title for multi-line text in clipboard</comment>
         <translation>
-            <numerusform>Kopirani tekst (%n redak)</numerusform>
-            <numerusform>Kopirani tekst (%n retka)</numerusform>
-            <numerusform>Kopirani tekst (%n redaka)</numerusform>
+            <numerusform>מלל הועתק ( שורה %n)</numerusform>
+            <numerusform>מלל הועתק (%n שורות)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="2481"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="2485"/>
         <source>Text Copied</source>
         <comment>Notification title for single-line text in clipboard</comment>
-        <translation>Kopirani tekst</translation>
+        <translation>מלל הועתק</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="2497"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="2501"/>
         <source>Data Copied</source>
         <comment>Notification title for a copied data in clipboard</comment>
-        <translation>Kopirani podaci</translation>
+        <translation>נתונים הועתקו</translation>
     </message>
 </context>
 <context>
@@ -3144,7 +2942,7 @@ Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="54"/>
         <source>Show main window and optionally open tab with given name.</source>
-        <translation>Prikaži glavni prozor i opcionalno otvori karticu sa zadanim imenom.</translation>
+        <translation>הצגת חלון ראשי ולחלופין פתיחת לשונית בשם נתון.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="55"/>
@@ -3152,37 +2950,37 @@ Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
         <location filename="../src/scriptable/commandhelp.cpp" line="148"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="151"/>
         <source>NAME</source>
-        <translation>NAZIV</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="57"/>
         <source>Hide main window.</source>
-        <translation>Sakrij glavni prozor.</translation>
+        <translation>הסתרת חלון ראשי.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="59"/>
         <source>Show or hide main window.</source>
-        <translation>Prikaži ili sakrij glavni prozor.</translation>
+        <translation>הצגת או הסתרת חלון ראשי.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="61"/>
         <source>Open context menu.</source>
-        <translation>Otvori kontekstni izbornik.</translation>
+        <translation>פתיחת תפריט הרשר.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="63"/>
         <source>Exit server.</source>
-        <translation>Zatvori poslužitelja.</translation>
+        <translation>יציאה מהשרת.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="65"/>
         <source>Disable or enable clipboard content storing.</source>
-        <translation>Aktiviraj ili deaktiviraj spremanje sadržaja međuspremnika.</translation>
+        <translation>להשבית או לאפשר אחסון תוכן לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="68"/>
         <source>Print clipboard content.</source>
-        <translation>Ispiši sadržaj međuspremnika.</translation>
+        <translation>הדפסת תוכן לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="69"/>
@@ -3193,43 +2991,43 @@ Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
         <location filename="../src/scriptable/commandhelp.cpp" line="120"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="122"/>
         <source>MIME</source>
-        <translation>MIME</translation>
+        <translation type="unfinished">MIME</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="72"/>
         <source>Print X11 selection content.</source>
-        <translation>Ispiši sadržaj X11 odabira.</translation>
+        <translation>הדפסת בחירת תוכן X11.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="76"/>
         <source>Paste clipboard to current window
 (may not work with some applications).</source>
-        <translation>Umetni međuspremnik u trenutačni prozor
-(možda neće raditi s nekim programima).</translation>
+        <translation>הדבקת לוח־גזירים לחלון נוכחי
+(עשוי לא לעבוד עם כמה יישומונים).</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="79"/>
         <source>Copy clipboard from current window
 (may not work with some applications).</source>
-        <translation>Kopiraj međuspremnik iz trenutačnog prozora
-(možda neće raditi s nekim programima).</translation>
+        <translation>העתקת לוח־גזירים מחלון נוכחי
+(עשוי לא לעבוד עם כמה יישומונים).</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="81"/>
         <source>Set clipboard text.</source>
-        <translation>Postavi tekst međuspremnika.</translation>
+        <translation>הגדת מלל לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="82"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="99"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="103"/>
         <source>TEXT</source>
-        <translation>TEKST</translation>
+        <translation>מלל</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="83"/>
         <source>Set clipboard content.</source>
-        <translation>Postavi sadržaj međuspremnika.</translation>
+        <translation>הגדרת תוכן לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="85"/>
@@ -3237,17 +3035,17 @@ Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
         <location filename="../src/scriptable/commandhelp.cpp" line="121"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="122"/>
         <source>DATA</source>
-        <translation>PODACI</translation>
+        <translation>נתונים</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="89"/>
         <source>Print amount of items in current tab.</source>
-        <translation>Ispiši količinu elemenata u trenutačnoj kartici.</translation>
+        <translation>הדפסת מספר הפריטים בלשונית נוכחית.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="91"/>
         <source>Copy item in the row to clipboard.</source>
-        <translation>Kopiraj element u retku u međuspremnik.</translation>
+        <translation>העתק פריט שבשורה אל לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="92"/>
@@ -3256,118 +3054,118 @@ Dopušteni znakovi su slova, znamenke, crtica ili trotočka!</translation>
         <location filename="../src/scriptable/commandhelp.cpp" line="117"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="119"/>
         <source>ROW</source>
-        <translation>REDAK</translation>
+        <translation>שורה</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="94"/>
         <source>Copy next item from current tab to clipboard.</source>
-        <translation>Kopiraj sljedeći element trenutačne kartice u međuspremnik.</translation>
+        <translation>העתקת הפריט הבא מלשונית נוכחית לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="96"/>
         <source>Copy previous item from current tab to clipboard.</source>
-        <translation>Kopiraj prethodni element trenutačne kartice u međuspremnik.</translation>
+        <translation>העתקת פריט קודם מלשונית נוכחית לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="98"/>
         <source>Add text into clipboard.</source>
-        <translation>Dodaj tekst u međuspremnik.</translation>
+        <translation>להוסיף מלל לתוך לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="101"/>
         <source>Insert text into given row.</source>
-        <translation>Umetni tekst u zadani redak.</translation>
+        <translation>להכניס מלל לשורה נתונה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="105"/>
         <source>Remove items in given rows.</source>
-        <translation>Ukloni elemente u zadanim redcima.</translation>
+        <translation>להסיר פריטים משורה נתונה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="106"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="126"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="130"/>
         <source>ROWS</source>
-        <translation>REDCI</translation>
+        <translation>שורות</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="108"/>
         <source>Edit items or edit new one.
 Value -1 is for current text in clipboard.</source>
-        <translation>Uredi elemente ili uredi novi element.
-Vrijednost -1 odnosi se na trenutačni tekst u međuspremniku.</translation>
+        <translation>עריכת פריטים או עריכת חדשים.
+ערך1 - הוא למלל הנוכחי לוח־גזירים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="113"/>
         <source>Set separator for items on output.</source>
-        <translation>Postavi znak razdvajanja za elemente pri izradi razultata.</translation>
+        <translation>הגדרת מפריד לפריטים בפלט.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="114"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="131"/>
         <source>SEPARATOR</source>
-        <translation>ZNAK RAZDVAJANJA</translation>
+        <translation>מפריד</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="116"/>
         <source>Print raw data of clipboard or item in row.</source>
-        <translation>Ispiši neformatirane podatke međuspremnika ili elementa redom.</translation>
+        <translation>הדפסת נתוני לוח־גזירים גולמיים או פריט בשורה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="118"/>
         <source>Write raw data to given row.</source>
-        <translation>Zapiši neformatirane podatke u zadani redak.</translation>
+        <translation>כתיבת נתונים גולמיים לשורה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="125"/>
         <source>Show action dialog.</source>
-        <translation>Prikaži dijalog radnje.</translation>
+        <translation>הצגת דו־שיח פעולה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="128"/>
         <source>Run PROGRAM on item text in the rows.
 Use %1 in PROGRAM to pass text as argument.</source>
-        <translation>Pokreni PROGRAM na tekstu elementa u redcima.
-Koristi „%1” u PROGRAMU za proslijeđivanje teksta kao argument.</translation>
+        <translation>הפעלת תוכנית על פריט מלל בשורות.
+להשתמש בתוכנית ב־%1 כדי להעביר מלל כמשתנה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="131"/>
         <source>PROGRAM</source>
-        <translation>PROGRAM</translation>
+        <translation>תוכנית</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="133"/>
         <source>Show tray popup message for TIME milliseconds.</source>
-        <translation>Prikaži skočnu poruku programske trake za VRIJEME u milisekundama.</translation>
+        <translation>הצגת הודעה חלון־צץ למשך אלפיות שניה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="134"/>
         <source>TITLE</source>
-        <translation>NASLOV</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="135"/>
         <source>MESSAGE</source>
-        <translation>PORUKA</translation>
+        <translation>הודעה</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="136"/>
         <source>TIME</source>
-        <translation>VRIJEME</translation>
+        <translation>זמן</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="139"/>
         <source>List available tab names.</source>
-        <translation>Nabroji dostupna imena kartica.</translation>
+        <translation>רשימת שמות לשוניות זמינים.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="141"/>
         <source>Run command on tab with given name.
 Tab is created if it doesn&apos;t exist.
 Default is the first tab.</source>
-        <translation>Pokreni naredbu na kartici sa zadanim imenom.
-Kartica će se stvoriti, ako ne postoji.
-Standardno se koristi prva kartica.</translation>
+        <translation>הפעלת פקודה מלשונית בשם נתון.
+אם הלשונית לא קיימת היא תיווצר.
+ברירת מחדל היא הלשונית הראשונה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="145"/>
@@ -3375,223 +3173,223 @@ Standardno se koristi prva kartica.</translation>
         <location filename="../src/scriptable/commandhelp.cpp" line="188"/>
         <location filename="../src/scriptable/scriptable.cpp" line="111"/>
         <source>COMMAND</source>
-        <translation>NAREDBA</translation>
+        <translation>פקודה</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="147"/>
         <source>Remove tab.</source>
-        <translation>Ukloni karticu.</translation>
+        <translation>הסרת לשונית.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="150"/>
         <source>Rename tab.</source>
-        <translation>Preimenuj karticu.</translation>
+        <translation>שינוי שם לשונית.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="152"/>
         <source>NEW_NAME</source>
-        <translation>NOVO_IME</translation>
+        <translation>שם_חדש</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="155"/>
         <source>Export items to file.</source>
-        <translation>Izvezi elemente u datoteku.</translation>
+        <translation>ייצוא פריטים לקובץ.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="156"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="159"/>
         <source>FILE_NAME</source>
-        <translation>IME_DATOTEKE</translation>
+        <translation>שם_קובץ</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="158"/>
         <source>Import items from file.</source>
-        <translation>Uvezi elemente iz datoteke.</translation>
+        <translation>ייבוא פריטים מקובץ.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="162"/>
         <source>List all options.</source>
-        <translation>Nabroji sve opcije.</translation>
+        <translation>רשימת כל האפשרויות.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="164"/>
         <source>Get option value.</source>
-        <translation>Iščitaj vrijednost opcije.</translation>
+        <translation>קבלת ערך אפשרות.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="165"/>
         <location filename="../src/scriptable/commandhelp.cpp" line="168"/>
         <source>OPTION</source>
-        <translation>OPCIJA</translation>
+        <translation>אפשרות</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="167"/>
         <source>Set option value.</source>
-        <translation>Postavi vrijednost opcije.</translation>
+        <translation>הגדרת ערך אפשרויות.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="169"/>
         <source>VALUE</source>
-        <translation>VRIJEDNOST</translation>
+        <translation>ערך</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="171"/>
         <source>Evaluate script.</source>
-        <translation>Evaluiraj skript.</translation>
+        <translation>הערכת תסריט.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="172"/>
         <source>SCRIPT</source>
-        <translation>SKRIPTA</translation>
+        <translation>תסריט</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="173"/>
         <source>ARGUMENTS</source>
-        <translation>ARGUMENTI</translation>
+        <translation>משתנים</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="175"/>
         <source>Starts or connects to application instance with given session name.</source>
-        <translation>Pokreće ili povezuje primjerak programa sa zadanim imenom sesije.</translation>
+        <translation>אתחול או התחברות לאדגם יישומוןן עם שם שיח נתון.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="176"/>
         <source>SESSION</source>
-        <translation>SESIJA</translation>
+        <translation>שיח</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="178"/>
         <source>Print help for COMMAND or all commands.</source>
-        <translation>Ispiši pomoć za NAREDBU ili sve naredbe.</translation>
+        <translation>הדפסת עזרה לפקודה או לכל הפקודות.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="181"/>
         <source>Print version of program and libraries.</source>
-        <translation>Ispiši verziju programa i biblioteka.</translation>
+        <translation>הדפסת גרסת תוכנית וספריות.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="184"/>
         <source>Run application tests (append --help argument for more info).</source>
-        <translation>Pokreni testove programa (dodaj argument --help za dobivanje više informacija).</translation>
+        <translation>הפעלת בדיקות יישומום (append - משתנה עזרה לקבלת מידע נוסף).</translation>
     </message>
     <message>
         <location filename="../src/scriptable/commandhelp.cpp" line="187"/>
         <source>Start server in background before running a command.</source>
-        <translation>Pokreni poslužitelja u pozadini prije pokretanja naredbe.</translation>
+        <translation>אתחול שרת ברקע לפני הפעלת פקודה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="111"/>
         <source>Usage: copyq [%1]</source>
-        <translation>Upotreba: copyq [%1]</translation>
+        <translation>שימוש: copyq [%1]</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="112"/>
         <source>Starts server if no command is specified.</source>
-        <translation>Pokreće poslužitelja, ako nijedna naredba nije određena.</translation>
+        <translation>אתחול שרת אם לא צויינה פקודה.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="113"/>
         <source>  COMMANDs:</source>
-        <translation>  NAREDBE:</translation>
+        <translation>  פקודות:</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="118"/>
         <source>NOTES:</source>
-        <translation>NAPOMENE:</translation>
+        <translation>העות:</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="119"/>
         <source>  - Use dash argument (-) to read data from standard input.</source>
-        <translation>  - Koristi argument (-) za čitanje podataka iz standardnog unosa.</translation>
+        <translation>  להשתמש במשתנה מקף (-) כדי לקרוא נתונים מקלט רגיל.</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="120"/>
         <source>  - Use double-dash argument (--) to read all following arguments without
     expanding escape sequences (i.e. \n, \t and others).</source>
-        <translation>  - Koristi argument s dvije crtice (--) za čitanje sljedećih argumenata, bez
-    širenja izlaznog niza (kao što su \n, \t i ostali).</translation>
+        <translation>  - להשתמש במשתנה מקף כפול (--) כדי לקרוא את כל המשתנים הבאים ללא
+    הרחבת רצפי בריחה (כלומר \n, \t ואחרים).</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="122"/>
         <source>  - Use ? for MIME to print available MIME types (default is &quot;text/plain&quot;).</source>
-        <translation>  - Koristi upitnik (?) za MIME za ispis dostupnih MIME vrsta (standardno je „text/plain”).</translation>
+        <translation>  - להשתמש ב־? עבור MIME כדי להדפיס סוגי MIME זמינים (ברירת מחדל הוא &quot;מלל/רגיל&quot;).</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="127"/>
         <source>Invalid number of arguments!</source>
-        <translation>Neispravan broj argumenata!</translation>
+        <translation>לא ניתן לשמור קובץ &quot;%1&quot;!</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="583"/>
         <source>Cannot save to file &quot;%1&quot;!</source>
-        <translation>Nije moguće spremiti datoteku „%1”!</translation>
+        <translation>לא ניתן לשמור לקובץ &quot;%1&quot;!</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="588"/>
         <source>Cannot import file &quot;%1&quot;!</source>
-        <translation>Nije moguće uvesti datoteku „%1”!</translation>
+        <translation>לא ניתן לייבא קובץ &quot;%1&quot;!</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="725"/>
         <location filename="../src/scriptable/scriptable.cpp" line="760"/>
         <source>CopyQ Clipboard Manager</source>
-        <translation>CopyQ upravljač međuspremnika</translation>
+        <translation>מנהל לוח־גזירים CopyQ</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="772"/>
         <source>Command not found!</source>
-        <translation>Naredba nije pronađena!</translation>
+        <translation>לא נמצא פקודה!</translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="871"/>
         <source>Terminating server.
 </source>
-        <translation>Poslužitelj se prekida.
+        <translation>סיום שרת.
 </translation>
     </message>
     <message>
         <location filename="../src/scriptable/scriptable.cpp" line="1404"/>
         <source>Invalid option &quot;%1&quot;!</source>
-        <translation>Neispravna opcija „%1”!</translation>
+        <translation>אפשרות &quot;%1&quot; לא תקינה!</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptable.cpp" line="2889"/>
+        <location filename="../src/scriptable/scriptable.cpp" line="2894"/>
         <source>Exception</source>
-        <translation>Iznimka</translation>
+        <translation>חריגה</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptable.cpp" line="2890"/>
+        <location filename="../src/scriptable/scriptable.cpp" line="2895"/>
         <source>Exception in %1</source>
-        <translation>Iznimka u %1</translation>
+        <translation>חריגה ב־%1</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptable.cpp" line="2994"/>
+        <location filename="../src/scriptable/scriptable.cpp" line="2999"/>
         <source>Failed to copy to clipboard!</source>
-        <translation>Neuspjelo kopiranje u međuspremnik!</translation>
+        <translation>העתקה ללוח־גזירים כשלה!</translation>
     </message>
 </context>
 <context>
     <name>ScriptableProxy</name>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="618"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="619"/>
         <source>Tab with given name doesn&apos;t exist!</source>
-        <translation>Kartica sa zadanim imenom ne postoji!</translation>
+        <translation>לא קיימת לשונית בשם הנתון!</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="623"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="624"/>
         <source>Tab name cannot be empty!</source>
-        <translation>Ime kartice ne može biti prazno!</translation>
+        <translation>שם לשונית לא יכול להיות ריק!</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="1151"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="1152"/>
         <source>Tab with given name already exists!</source>
-        <translation>Kartica sa zadanim imenom već postoji!</translation>
+        <translation>לשונית בשם הנתון קיימת כבר!</translation>
     </message>
     <message>
-        <location filename="../src/scriptable/scriptableproxy.cpp" line="2416"/>
+        <location filename="../src/scriptable/scriptableproxy.cpp" line="2420"/>
         <source>*Clipboard Storing Disabled*</source>
         <comment>Main window title if clipboard storing is disabled</comment>
-        <translation>*Spremanje međuspremnika onemogućeno*</translation>
+        <translation>*דו־שיח אחסון לוח־גזירים*</translation>
     </message>
 </context>
 <context>
@@ -3599,7 +3397,7 @@ Standardno se koristi prva kartica.</translation>
     <message>
         <location filename="../src/gui/shortcutbutton.cpp" line="27"/>
         <source>Add shortcut</source>
-        <translation>Dodaj prečac</translation>
+        <translation>הוספת קיצור־דרך</translation>
     </message>
 </context>
 <context>
@@ -3607,20 +3405,12 @@ Standardno se koristi prva kartica.</translation>
     <message>
         <location filename="../src/ui/shortcutdialog.ui" line="14"/>
         <source>New Shortcut</source>
-        <translation>Novi prečac</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Press any key combination. &lt;span style=&quot; font-weight:600;&quot;&gt;Escape&lt;/span&gt; to cancel.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pritisni bilo koju tipkovničku kombinaciju. Tipka &lt;span style=&quot; font-weight:600;&quot;&gt;Escape&lt;/span&gt; za prekid.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Click here and press any key combination</source>
-        <translation type="vanished">Ovdje pritisni mišem, zatim pritisni bilo koju tipkovničku kombinaciju</translation>
+        <translation>קיצור־דרך חדש</translation>
     </message>
     <message>
         <location filename="../src/gui/shortcutdialog.cpp" line="22"/>
         <source>Remove Shortcut</source>
-        <translation>Ukloni prečac</translation>
+        <translation>הסרת קיצור־דרך</translation>
     </message>
 </context>
 <context>
@@ -3628,32 +3418,32 @@ Standardno se koristi prva kartica.</translation>
     <message>
         <location filename="../src/ui/shortcutswidget.ui" line="31"/>
         <source>&amp;Find:</source>
-        <translation>&amp;Nađi:</translation>
+        <translation>&amp;חיפוש:</translation>
     </message>
     <message>
         <location filename="../src/ui/shortcutswidget.ui" line="50"/>
         <source>Gl&amp;obal</source>
-        <translation>&amp;Globalno</translation>
+        <translation>&amp;כללי</translation>
     </message>
     <message>
         <location filename="../src/ui/shortcutswidget.ui" line="56"/>
         <source>Global shortcuts can be triggered from any application.</source>
-        <translation>Globalni prečaci mogu se pokrenuti iz bilo kojeg programa.</translation>
+        <translation>ניתן להפעיל קיצורי דרך כלליים מכל יישומון.</translation>
     </message>
     <message>
         <location filename="../src/ui/shortcutswidget.ui" line="77"/>
         <source>A&amp;pplication</source>
-        <translation>&amp;Program</translation>
+        <translation>&amp;יישומון</translation>
     </message>
     <message>
         <location filename="../src/ui/shortcutswidget.ui" line="83"/>
         <source>Application shortcuts can only be triggered from the main window.</source>
-        <translation>Prečaci programa mogu se koristiti samo iz glavnog prozora.</translation>
+        <translation>ניתן להפעיל קיצורי דרך יישומונים רק מהחלון הראשי.</translation>
     </message>
     <message>
         <location filename="../src/gui/shortcutswidget.cpp" line="229"/>
         <source>Shortcut already exists!</source>
-        <translation>Prečac već postoji!</translation>
+        <translation>קיצור־דרך קיים כבר!</translation>
     </message>
 </context>
 <context>
@@ -3663,29 +3453,29 @@ Standardno se koristi prva kartica.</translation>
         <source>Tab name must be non-empty and unique.&lt;br /&gt;
 Tab &lt;b&gt;No&amp;amp;tes&lt;/b&gt; can be opened using &lt;b&gt;Alt+T&lt;/b&gt;.&lt;br /&gt;
 Use &lt;b&gt;/&lt;/b&gt; as path separator in tree view tab layout.</source>
-        <translation>Ime kartice ne smije biti prazno i mora biti jedinstveno. &lt;br /&gt;
-Kartica &lt;b&gt;Napomene&lt;/b&gt; može se otvoriti pomoću &lt;b&gt;Alt+T&lt;/b&gt;.&lt;br /&gt;
-Koristi &lt;b&gt;/&lt;/b&gt; kao znak razdvajanja staza u stablastom prikazu kartica.</translation>
+        <translation>שם לשונית לא יכול להיות ריק וחייב להיות ייחודי.&lt;br /&gt;
+ניתן לפתוח לשונית &lt;b&gt;ה&amp;ערות&lt;/b&gt; באמצעות &lt;b&gt;אלט+T&lt;/b&gt;
+במתווה מצג עץ לשוניות, ניתן להשתמש ב־&lt;b&gt;/&lt;/b&gt;כמפריד בנתיב.</translation>
     </message>
     <message>
         <location filename="../src/ui/tabdialog.ui" line="43"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Naziv:</translation>
+        <translation>&amp;שם:</translation>
     </message>
     <message>
         <location filename="../src/gui/tabdialog.cpp" line="17"/>
         <source>New Tab</source>
-        <translation>Nova kartica</translation>
+        <translation>לשונית חדשה</translation>
     </message>
     <message>
         <location filename="../src/gui/tabdialog.cpp" line="20"/>
         <source>Rename Tab</source>
-        <translation>Preimenuj karticu</translation>
+        <translation>שינוי שם לשונית</translation>
     </message>
     <message>
         <location filename="../src/gui/tabdialog.cpp" line="23"/>
         <source>Rename Tab Group</source>
-        <translation>Preimenuj grupu kartica</translation>
+        <translation>שינוי שם קבוצת לשוניות</translation>
     </message>
 </context>
 <context>
@@ -3693,33 +3483,33 @@ Koristi &lt;b&gt;/&lt;/b&gt; kao znak razdvajanja staza u stablastom prikazu kar
     <message>
         <location filename="../src/ui/tabpropertieswidget.ui" line="46"/>
         <source>&amp;Maximum number of items:</source>
-        <translation>&amp;Maksimalni broj elemenata:</translation>
+        <translation>מ&amp;פר פריטים מירבי:</translation>
     </message>
     <message>
         <location filename="../src/ui/tabpropertieswidget.ui" line="56"/>
         <source>default</source>
-        <translation>standardno</translation>
+        <translation>ברירת מחדל</translation>
     </message>
     <message>
         <location filename="../src/ui/tabpropertieswidget.ui" line="84"/>
         <source>&amp;Save Items</source>
-        <translation>&amp;Spremi elemente</translation>
+        <translation>&amp;שמירת פריטים</translation>
     </message>
 </context>
 <context>
     <name>TrayMenu</name>
     <message>
-        <location filename="../src/gui/traymenu.cpp" line="96"/>
+        <location filename="../src/gui/traymenu.cpp" line="109"/>
         <source>Press &apos;/&apos; to search</source>
-        <translation>Pritisni „/” za pretragu</translation>
+        <translation>לחיצה על &apos;/&apos; לחיפוש</translation>
     </message>
     <message>
-        <location filename="../src/gui/traymenu.cpp" line="96"/>
+        <location filename="../src/gui/traymenu.cpp" line="109"/>
         <source>Type to search</source>
-        <translation>Upiši za pretragu</translation>
+        <translation>להקליד כדי לחפש</translation>
     </message>
     <message>
-        <location filename="../src/gui/traymenu.cpp" line="110"/>
+        <location filename="../src/gui/traymenu.cpp" line="123"/>
         <source>&amp;%1. %2</source>
         <comment>Key hint (number shortcut) for items in tray menu (%1 is number, %2 is item label)</comment>
         <translation>&amp;%1. %2</translation>
@@ -3730,12 +3520,12 @@ Koristi &lt;b&gt;/&lt;/b&gt; kao znak razdvajanja staza u stablastom prikazu kar
     <message>
         <location filename="../src/gui/filterlineedit.cpp" line="375"/>
         <source>Regular Expression</source>
-        <translation>Regularni izraz</translation>
+        <translation>ביטוי רגיל</translation>
     </message>
     <message>
         <location filename="../src/gui/filterlineedit.cpp" line="378"/>
         <source>Case Insensitive</source>
-        <translation>Bez razlikovanja velikih/malih slova</translation>
+        <translation>לא רגיש לרישיות</translation>
     </message>
 </context>
 </TS>

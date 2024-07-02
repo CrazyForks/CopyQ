@@ -5,8 +5,10 @@
 
 #include "common/mimetypes.h"
 
+#include <QLockFile>
 #include <QObject>
 #include <QPersistentModelIndex>
+#include <QSet>
 #include <QStringList>
 #include <QTimer>
 #include <QVector>
@@ -124,10 +126,14 @@ private:
             const QDir &dir, const BaseNameExtensions &baseNameWithExts,
             QVariantMap *dataMap, QVariantMap *mimeToExtension);
 
-    bool copyFilesFromUriList(const QByteArray &uriData, int targetRow, const QStringList &baseNames);
+    bool copyFilesFromUriList(const QByteArray &uriData, int targetRow, const QSet<QString> &baseNames);
+
+    void updateMovedRows();
 
     QAbstractItemModel *m_model;
     QTimer m_updateTimer;
+    QTimer m_moveTimer;
+    int m_moveEnd = -1;
     int m_interval = 0;
     const QList<FileFormat> &m_formatSettings;
     QString m_path;
@@ -140,6 +146,8 @@ private:
     BaseNameExtensionsList m_fileList;
     int m_lastBatchIndex = -1;
     int m_itemDataThreshold = -1;
+
+    QLockFile m_lock;
 };
 
 #endif // FILEWATCHER_H

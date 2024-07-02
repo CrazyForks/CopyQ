@@ -14,6 +14,7 @@
 #include <QPointer>
 #include <QTimer>
 #include <QVariantMap>
+#include <QVector>
 
 class ItemEditorWidget;
 class ItemFactory;
@@ -121,12 +122,16 @@ class ClipboardBrowser final : public QListView
                 int row = 0 //!< Target row for the new item (negative to append item).
                 );
 
+        bool addReversed(const QVector<QVariantMap> &dataList, int row);
+
         bool addAndSelect(const QVariantMap &data, int row);
 
         /**
          * Add item and remove duplicates.
          */
         void addUnique(const QVariantMap &data, ClipboardMode mode);
+
+        void setItemsData(const QMap<QPersistentModelIndex, QVariantMap> &itemsData);
 
         /** Number of items in list. */
         int length() const { return m.rowCount(); }
@@ -183,8 +188,6 @@ class ClipboardBrowser final : public QListView
          */
         bool isFiltered(int row) const;
 
-        QVariantMap itemData(const QModelIndex &index) const;
-
         bool isLoaded() const;
 
         /**
@@ -220,7 +223,6 @@ class ClipboardBrowser final : public QListView
         using QListView::verticalOffset;
 
     signals:
-        void itemsAboutToBeRemoved(const QModelIndex &parent, int first, int last);
         void runOnRemoveItemsHandler(const QList<QPersistentModelIndex> &indexes, bool *canRemove);
 
         /** Show list request. */

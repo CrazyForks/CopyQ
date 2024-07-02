@@ -23,6 +23,7 @@
 #include "gui/notification.h"
 #include "gui/pixelratio.h"
 #include "gui/screen.h"
+#include "gui/selectiondata.h"
 #include "gui/tabicons.h"
 #include "gui/traymenu.h"
 #include "gui/windowgeometryguard.h"
@@ -1315,7 +1316,7 @@ QString ScriptableProxy::browserRemoveRows(const QString &tabName, QVector<int> 
     INVOKE(browserRemoveRows, (tabName, rows));
     ClipboardBrowser *c = fetchBrowser(tabName);
     if (!c)
-        return QLatin1String("Invalid tab");
+        return QStringLiteral("Invalid tab");
 
     std::sort( rows.begin(), rows.end(), std::greater<int>() );
 
@@ -1341,15 +1342,14 @@ void ScriptableProxy::browserMoveSelected(int targetRow)
 {
     INVOKE2(browserMoveSelected, (targetRow));
 
-    const QList<QPersistentModelIndex> selected = selectedIndexes();
-    if ( selected.isEmpty() )
-        return;
-
-    ClipboardBrowser *c = m_wnd->browserForItem(selected.first());
+    QList<QPersistentModelIndex> selected = selectedIndexes();
+    selectionRemoveInvalid(&selected);
+    ClipboardBrowser *c = browserForIndexes(selected);
     if (c == nullptr)
         return;
 
     QModelIndexList indexes;
+    indexes.reserve(selected.size());
     for (const auto &index : selected)
         indexes.append(index);
     c->move(indexes, targetRow);
@@ -1516,15 +1516,13 @@ QString ScriptableProxy::browserInsert(const QString &tabName, int row, const Va
 
     ClipboardBrowser *c = fetchBrowser(tabName);
     if (!c)
-        return QLatin1String("Invalid tab");
+        return QStringLiteral("Invalid tab");
 
     if ( !c->allocateSpaceForNewItems(items.items.size()) )
-        return QLatin1String("Tab is full (cannot remove any items)");
+        return QStringLiteral("Tab is full (cannot remove any items)");
 
-    for (const auto &item : items.items) {
-        if ( !c->add(item, row) )
-            return QLatin1String("Failed to new add items");
-    }
+    if ( !c->addReversed(items.items, row) )
+        return QStringLiteral("Failed to add items");
 
     return QString();
 }
@@ -1535,21 +1533,24 @@ QString ScriptableProxy::browserChange(const QString &tabName, int row, const Va
 
     ClipboardBrowser *c = fetchBrowser(tabName);
     if (!c)
-        return QLatin1String("Invalid tab");
+        return QStringLiteral("Invalid tab");
+
+    QMap<QPersistentModelIndex, QVariantMap> itemsData;
 
     int currentRow = row;
     for (const auto &data : items.items) {
         const auto index = c->index(currentRow);
-        QVariantMap itemData = c->model()->data(index, contentType::data).toMap();
+        QVariantMap itemData = index.data(contentType::data).toMap();
         for (auto it = data.constBegin(); it != data.constEnd(); ++it) {
             if ( it.value().isValid() )
                 itemData.insert( it.key(), it.value() );
             else
                 itemData.remove( it.key() );
         }
-        c->model()->setData(index, itemData, contentType::data);
+        itemsData[index] = itemData;
         ++currentRow;
     }
+    c->setItemsData(itemsData);
 
     return QString();
 }
@@ -1583,8 +1584,7 @@ int ScriptableProxy::currentItem()
 {
     INVOKE(currentItem, ());
 
-    const QPersistentModelIndex current =
-            m_actionData.value(mimeCurrentItem).value<QPersistentModelIndex>();
+    const QPersistentModelIndex current = currentIndex();
     return current.isValid() ? current.row() : -1;
 }
 
@@ -1615,26 +1615,44 @@ QVector<int> ScriptableProxy::selectedItems()
     INVOKE(selectedItems, ());
 
     QVector<int> selectedRows;
-    const QList<QPersistentModelIndex> selected = selectedIndexes();
+    QList<QPersistentModelIndex> selected = selectedIndexes();
     selectedRows.reserve(selected.count());
-    for (const auto &index : selected) {
-        if (index.isValid())
-            selectedRows.append(index.row());
-    }
+
+    for (const auto &index : selected)
+        selectedRows.append(index.row());
 
     return selectedRows;
+}
+
+QString ScriptableProxy::selectedTab()
+{
+    INVOKE(selectedTab, ());
+
+    const QPersistentModelIndex current = currentIndex();
+    ClipboardBrowser *c = m_wnd->browserForItem(current);
+    if (c != nullptr)
+        return c->tabName();
+
+    const QList<QPersistentModelIndex> selected = selectedIndexes();
+    c = m_wnd->browserForItem(current);
+    if (c != nullptr)
+        return c->tabName();
+
+    return m_actionData.value(mimeCurrentTab).toString();
 }
 
 QVariantMap ScriptableProxy::selectedItemData(int selectedIndex)
 {
     INVOKE(selectedItemData, (selectedIndex));
 
-    auto c = currentBrowser();
-    if (!c)
-        return QVariantMap();
-
     const auto index = selectedIndexes().value(selectedIndex);
-    Q_ASSERT( !index.isValid() || index.model() == c->model() );
+    if ( !index.isValid() )
+        return {};
+
+    ClipboardBrowser *c = m_wnd->browserForItem(index);
+    if (c == nullptr)
+        return {};
+
     return c->copyIndex(index);
 }
 
@@ -1642,15 +1660,14 @@ bool ScriptableProxy::setSelectedItemData(int selectedIndex, const QVariantMap &
 {
     INVOKE(setSelectedItemData, (selectedIndex, data));
 
-    auto c = currentBrowser();
-    if (!c)
-        return false;
-
     const auto index = selectedIndexes().value(selectedIndex);
     if ( !index.isValid() )
         return false;
 
-    Q_ASSERT( index.model() == c->model() );
+    ClipboardBrowser *c = m_wnd->browserForItem(index);
+    if (c == nullptr)
+        return false;
+
     return c->model()->setData(index, data, contentType::data);
 }
 
@@ -1658,22 +1675,16 @@ VariantMapList ScriptableProxy::selectedItemsData()
 {
     INVOKE(selectedItemsData, ());
 
-    auto c = currentBrowser();
-    if (!c)
-        return {};
-
-    const auto model = c->model();
+    QList<QPersistentModelIndex> selected = selectedIndexes();
+    ClipboardBrowser *c = browserForIndexes(selected);
+    if (c == nullptr)
+        return {QVector<QVariantMap>(selected.size(), {})};
 
     QVector<QVariantMap> dataList;
-    const auto selected = selectedIndexes();
     dataList.reserve(selected.size());
 
-    for (const auto &index : selected) {
-        if ( index.isValid() ) {
-            Q_ASSERT( index.model() == model );
-            dataList.append( c->copyIndex(index) );
-        }
-    }
+    for (const auto &index : selected)
+        dataList.append( c->copyIndex(index) );
 
     return {dataList};
 }
@@ -1682,21 +1693,23 @@ void ScriptableProxy::setSelectedItemsData(const VariantMapList &dataList)
 {
     INVOKE2(setSelectedItemsData, (dataList));
 
-    auto c = currentBrowser();
-    if (!c)
-        return;
-
-    const auto model = c->model();
-
-    const auto indexes = selectedIndexes();
-    const auto count = std::min( indexes.size(), dataList.items.size() );
+    const QList<QPersistentModelIndex> selected = selectedIndexes();
+    ClipboardBrowser *c = nullptr;
+    QMap<QPersistentModelIndex, QVariantMap> itemsData;
+    const auto count = std::min( selected.size(), dataList.items.size() );
     for ( int i = 0; i < count; ++i ) {
-        const auto &index = indexes[i];
-        if ( index.isValid() ) {
-            Q_ASSERT( index.model() == model );
-            model->setData(index, dataList.items[i], contentType::data);
-        }
+        const auto &index = selected[i];
+        if ( !index.isValid() )
+            continue;
+
+        if (c == nullptr)
+            c = m_wnd->browserForItem(index);
+
+        itemsData[index] = dataList.items[i];
     }
+
+    if (c != nullptr)
+        c->setItemsData(itemsData);
 }
 
 int ScriptableProxy::createSelection(const QString &tabName)
@@ -1852,18 +1865,14 @@ void ScriptableProxy::selectionDeselectSelection(int id, int toDeselectId)
 void ScriptableProxy::selectionGetCurrent(int id)
 {
     INVOKE2(selectionGetCurrent, (id));
-    auto selection = m_selections.take(id);
-    if (!selection.browser)
-        return;
 
-    auto selected = selectedIndexes();
-    selectionRemoveInvalid(&selected);
-    if ( selected.isEmpty() ) {
-        m_selections[id] = {nullptr, {}};
-    } else {
-        ClipboardBrowser *c = m_wnd->browserForItem(selected.first());
-        m_selections[id] = {c, selected};
+    QList<QPersistentModelIndex> selected = selectedIndexes();
+    ClipboardBrowser *c = browserForIndexes(selected);
+    if (c == nullptr) {
+        const QString currentTab = m_actionData.value(mimeCurrentTab).toString();
+        c = fetchBrowser(currentTab);
     }
+    m_selections[id] = {c, selected};
 }
 
 int ScriptableProxy::selectionGetSize(int id)
@@ -1884,7 +1893,6 @@ QVector<int> ScriptableProxy::selectionGetRows(int id)
     INVOKE(selectionGetRows, (id));
 
     auto selection = m_selections.value(id);
-    selectionRemoveInvalid(&selection.indexes);
     QVector<int> rows;
     rows.reserve(selection.indexes.size());
     for (const auto &index : selection.indexes)
@@ -1932,13 +1940,16 @@ void ScriptableProxy::selectionSetItemsData(int id, const QVariantList &dataList
 {
     INVOKE2(selectionSetItemsData, (id, dataList));
 
+    QMap<QPersistentModelIndex, QVariantMap> itemsData;
     const auto selection = m_selections.value(id);
     const auto count = std::min( selection.indexes.size(), dataList.size() );
     for ( int i = 0; i < count; ++i ) {
         const auto &index = selection.indexes[i];
         if ( index.isValid() )
-            selection.browser->model()->setData(index, dataList[i], contentType::data);
+            itemsData[index] = dataList[i].toMap();
     }
+
+    selection.browser->setItemsData(itemsData);
 }
 
 QVariantList ScriptableProxy::selectionGetItemsFormat(int id, const QString &format)
@@ -1959,27 +1970,22 @@ void ScriptableProxy::selectionSetItemsFormat(int id, const QString &mime, const
     INVOKE2(selectionSetItemsFormat, (id, mime, value));
 
     const auto selection = m_selections.value(id);
-    for (const auto &index : selection.indexes) {
-        if ( index.isValid() ) {
-            QVariantMap data = index.data(contentType::data).toMap();
-            if (value.isValid())
-                data[mime] = value;
-            else
-                data.remove(mime);
-            selection.browser->model()->setData(index, data, contentType::data);
-        }
-    }
+    setItemsData(selection.browser, selection.indexes, mime, value);
 }
 
 void ScriptableProxy::selectionMove(int id, int row)
 {
     INVOKE2(selectionMove, (id, row));
     auto selection = m_selections.value(id);
-    selectionRemoveInvalid(&selection.indexes);
+    if (!selection.browser)
+        return;
 
     QModelIndexList indexes;
-    for (const auto &index : selection.indexes)
-        indexes.append(index);
+    indexes.reserve(selection.indexes.size());
+    for (const auto &index : selection.indexes) {
+        if (index.isValid())
+            indexes.append(index);
+    }
 
     if ( !indexes.isEmpty() )
         selection.browser->move(indexes, row);
@@ -2158,6 +2164,8 @@ int ScriptableProxy::inputDialog(const NamedValueList &values)
                 const QVariant value = w->property(propertyName.toUtf8().constData());
                 result.items.append( NamedValue(name, value) );
             }
+            if ( widgets.isEmpty() )
+                result.items.append( NamedValue(QString(), true) );
         }
 
         QByteArray bytes;
@@ -2175,7 +2183,7 @@ int ScriptableProxy::inputDialog(const NamedValueList &values)
 
     if ( !dialogTitle.isNull() ) {
         dialog.setWindowTitle(dialogTitle);
-        dialog.setObjectName(QLatin1String("dialog_") + dialogTitle);
+        dialog.setObjectName(QStringLiteral("dialog_") + dialogTitle);
         WindowGeometryGuard::create(&dialog);
     }
 
@@ -2189,18 +2197,14 @@ int ScriptableProxy::inputDialog(const NamedValueList &values)
 void ScriptableProxy::setSelectedItemsData(const QString &mime, const QVariant &value)
 {
     INVOKE2(setSelectedItemsData, (mime, value));
-    const QList<QPersistentModelIndex> selected = selectedIndexes();
-    for (const auto &index : selected) {
-        ClipboardBrowser *c = m_wnd->browserForItem(index);
-        if (c) {
-            QVariantMap data = c->model()->data(index, contentType::data).toMap();
-            if (value.isValid())
-                data[mime] = value;
-            else
-                data.remove(mime);
-            c->model()->setData(index, data, contentType::data);
-        }
-    }
+
+    QList<QPersistentModelIndex> selected = selectedIndexes();
+    selectionRemoveInvalid(&selected);
+    ClipboardBrowser *c = browserForIndexes(selected);
+    if (c == nullptr)
+        return;
+
+    setItemsData(c, selected, mime, value);
 }
 
 void ScriptableProxy::filter(const QString &text)
@@ -2632,25 +2636,52 @@ QByteArray ScriptableProxy::itemData(const QString &tabName, int i, const QStrin
     return data.value(mime).toByteArray();
 }
 
-ClipboardBrowser *ScriptableProxy::currentBrowser() const
+void ScriptableProxy::setItemsData(
+    ClipboardBrowser *c, const QList<QPersistentModelIndex> &indexes, const QString &mime, const QVariant &value)
 {
-    const QString currentTabName = m_actionData.value(mimeCurrentTab).toString();
-    if (currentTabName.isEmpty())
-        return nullptr;
+    QMap<QPersistentModelIndex, QVariantMap> itemsData;
 
-    const int i = m_wnd->findTabIndex(currentTabName);
-    if (i == -1)
-        return nullptr;
+    for (const auto &index : indexes) {
+        if ( !index.isValid() )
+            continue;
 
-    auto c = m_wnd->browser(i);
-    Q_ASSERT(c->tabName() == currentTabName);
-    return c;
+        QVariantMap data = index.data(contentType::data).toMap();
+        if (value.isValid())
+            data[mime] = value;
+        else
+            data.remove(mime);
+        itemsData[index] = data;
+    }
+
+    c->setItemsData(itemsData);
 }
 
-QList<QPersistentModelIndex> ScriptableProxy::selectedIndexes() const
+template<typename T>
+T ScriptableProxy::getSelectionData(const QString &mime)
 {
-    return m_actionData.value(mimeSelectedItems)
-            .value< QList<QPersistentModelIndex> >();
+    QVariant value = m_actionData.value(mime);
+    if ( !value.isValid() && !m_actionData.contains(mimeCurrentTab) && getSelectionData() )
+        value = m_actionData.value(mime);
+    return value.value<T>();
+}
+
+QPersistentModelIndex ScriptableProxy::currentIndex()
+{
+    return getSelectionData<QPersistentModelIndex>(mimeCurrentItem);
+}
+
+QList<QPersistentModelIndex> ScriptableProxy::selectedIndexes()
+{
+    return getSelectionData<QList<QPersistentModelIndex>>(mimeSelectedItems);
+}
+
+ClipboardBrowser *ScriptableProxy::browserForIndexes(const QList<QPersistentModelIndex> &indexes) const
+{
+    for (const auto &index : indexes) {
+        if ( index.isValid() )
+            return m_wnd->browserForItem(index);
+    }
+    return nullptr;
 }
 
 QVariant ScriptableProxy::waitForFunctionCallFinished(int functionCallId)
@@ -2674,6 +2705,18 @@ QVariant ScriptableProxy::waitForFunctionCallFinished(int functionCallId)
     loop.exec();
 
     return result;
+}
+
+bool ScriptableProxy::getSelectionData()
+{
+    auto c = m_wnd->browser();
+    if (c == nullptr)
+        return false;
+
+    const QVariantMap data = selectionData(*c);
+    for (auto it = data.constBegin(); it != data.constEnd(); ++it)
+        m_actionData[it.key()] = it.value();
+    return true;
 }
 
 #ifdef HAS_TESTS

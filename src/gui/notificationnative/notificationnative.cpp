@@ -76,7 +76,9 @@ private:
     void onDestroyed();
     void onClosed();
     void onIgnored();
+#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5,245,0)
     void onActivated();
+#endif
     void update();
 
     void notificationLog(const char *message);
@@ -218,8 +220,6 @@ void NotificationNative::close()
         notification->close();
 
     notificationLog("Closed");
-
-    emit closeNotification(this);
 }
 
 void NotificationNative::onButtonClicked(unsigned int id)
@@ -250,11 +250,13 @@ void NotificationNative::onIgnored()
     dropNotification();
 }
 
+#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5,245,0)
 void NotificationNative::onActivated()
 {
     notificationLog("onActivated");
     dropNotification();
 }
+#endif
 
 void NotificationNative::update()
 {
@@ -337,12 +339,12 @@ void NotificationNative::notificationLog(const char *message)
 KNotification *NotificationNative::dropNotification()
 {
     m_closed = true;
-    if (!m_notification)
-        return nullptr;
-
     auto notification = m_notification;
-    m_notification = nullptr;
-    notification->disconnect(this);
+    if (notification) {
+        m_notification = nullptr;
+        notification->disconnect(this);
+    }
+    emit closeNotification(this);
     return notification;
 }
 

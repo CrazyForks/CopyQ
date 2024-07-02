@@ -81,8 +81,21 @@ bool TrayMenu::updateIconFromData(QAction *act, const QVariantMap &data)
 
     const QString icon = data.value(mimeIcon).toString();
     const QString tag = data.value(COPYQ_MIME_PREFIX "item-tag").toString();
-    if ( icon.isEmpty() && tag.isEmpty() )
-        return false;
+
+    if ( icon.isEmpty() && tag.isEmpty() ) {
+        const QString colorName = data.value(mimeColor).toString();
+        if ( colorName.isEmpty() )
+            return false;
+
+        const QColor color(colorName);
+        if ( !color.isValid() )
+            return false;
+
+        QPixmap pix(16, 16);
+        pix.fill(color);
+        act->setIcon(pix);
+        return true;
+    }
 
     const QColor color = getDefaultIconColor(*act->parentWidget());
     act->setIcon( iconFromFile(icon, tag, color) );
@@ -252,7 +265,8 @@ void TrayMenu::keyPressEvent(QKeyEvent *event)
                     if ( !m_numberSearch && m_searchText.isEmpty() ) {
                         bool ok;
                         const int row = txt.toInt(&ok);
-                        if (ok && row < m_clipboardItemActionCount) {
+                        const int start = static_cast<int>(m_rowIndexFromOne);
+                        if (ok && start <= row && row < start + m_clipboardItemActionCount) {
                             // Allow keypad digit to activate appropriate item in context menu.
                             if (event->modifiers() == Qt::KeypadModifier)
                                 event->setModifiers(Qt::NoModifier);
